@@ -1,0 +1,442 @@
+{
+  "common": {
+    "underConstruction": "கட்டுமானத்தில்",
+    "loading": "ஏற்றுகிறது...",
+    "error": "பிழை",
+    "submit": "சமர்ப்பிக்கவும்",
+    "cancel": "ரத்துசெய்",
+    "save": "சேமிக்கவும்",
+    "back": "பின்",
+    "next": "அடுத்து",
+    "currency": "ரூ.",
+    "close": "மூடு",
+    "and":"மற்றும் "
+  },
+  "menu": {
+    "summary": "சுருக்கம்",
+    "dailyUsage": "தினசரி பயன்பாடு",
+    "giftData": "பரிசு தரவு",
+    "history": "வரலாறு",
+    "redeemData": "தரவை மீட்டெடுக்கவும்",
+    "happyDay": "மகிழ்ச்சியான நாள்",
+    "subscription": "சந்தா",
+    "contactInformationChange": "தொடர்பு தகவலை மாற்றவும்",
+    "broadbandPasswordChange": "பிராட்பாண்ட் கடவுச்சொல்லை மாற்றவும்",
+    "detailedUsageDetails": "விரிவான பயன்பாட்டு விவரங்கள்",
+    "protocolReport": "நெறிமுறை அறிக்கை",
+    "postPaidPackageUpgrade": "பேக்கேஜ் மேம்பாடு",
+    "getExtraGB": "கூடுதல் GB பெறவும்",
+    "getPostpaidAddOnPackages": "கூடுதல் பேக்கேஜ்கள் பெறவும்",
+    "disableDetailReport": "விரிவான அறிக்கையை முடக்கவும்",
+    "mainPackages": "முக்கிய பேக்கேஜ்கள்",
+    "dataAddOns": "தரவு கூடுதல்கள்",
+    "getBroadbandMainPackage": "பிராட்பாண்ட் முக்கிய பேக்கேஜ் பெறவும்",
+    "getBroadbandAddOnPackage": "பிராட்பாண்ட் கூடுதல் பேக்கேஜ் பெறவும்",
+    "transaction": "பரிவர்த்தனை",
+    "myPackage": "எனது பேக்கேஜ்",
+    "vod": "வீடியோ ஆன் டிமாண்ட்",
+    "peoTvGo": "பியோ டிவி கோ",
+    "packages": "பேக்கேஜ்கள்",
+    "callForwarding": "அழைப்பு அனுப்புதல்",
+    "newServices": "புதிய சேவைகள்",
+    "promotion": "விளம்பரம்",
+    "digitalLife": "டிஜிட்டல் வாழ்க்கை",
+    "bill": "பில்",
+    "hotDevices": "பிரபலமான சாதனங்கள்",
+    "complaints": "புகார்கள்",
+    "submitComplaint": "உங்கள் புகாரை சமர்ப்பிக்கவும்",
+    "myProfile": "எனது சுயவிவரம்",
+    "manageConnections": "இணைப்புகளை நிர்வகிக்கவும்",
+    "more": "மேலும்",
+    "from": "இருந்து",
+    "to": "வரை",
+    "search": "தேடல்"
+  },
+  "navbar": {
+    "broadband": "பிராட்பாண்ட்",
+    "peoTV": "பியோ டிவி",
+    "voice": "குரல்",
+    "mobile": "கைபேசி",
+    "promotions": "விளம்பரங்கள்"
+  },
+  "languages": {
+    "english": "English",
+    "sinhala": "සිංහල",
+    "tamil": "தமிழ்"
+  },
+  "quickAccessMenu": {
+    "newServices": "புதிய சேவைகள்",
+    "digitalLife": "டிஜிட்டல் வாழ்க்கை",
+    "bill": "பில்",
+    "hotDevices": "சூடான சாதனங்கள்",
+    "complaints": "புகார்கள்",
+    "more": "மேலும்"
+  },
+  "valueAddedServices": {
+    "valueAddedServices": "மதிப்பு கூட்டப்பட்ட சேவைகள்"
+  },
+  "accountBalance": {
+    "balance": "இருப்பு :",
+    "totalPayable": "செலுத்த வேண்டிய மொத்த:",
+    "currency": "ரூ. ",
+    "payNow": "இப்போது செலுத்தவும்",
+    "billHistory": "பில் வரலாறு"
+  },
+  "broadbandDetails": {
+    "myPackage": "எனது பேக்கேஜ்",
+    "extraGB": "கூடுதல் GB",
+    "bonusData": "போனஸ் டேட்டா",
+    "addOns": "கூடுதல்கள்",
+    "freeData": "இலவச தரவு",
+    "yourSpeedStatus": "உங்கள் வேகம் இப்போது {{status}} ஆக உள்ளது",
+    "dataUsage": "{{limit}} GB இல் {{used}} GB பயன்படுத்தப்பட்டுள்ளது",
+    "validTill": "செல்லுபடியாகும் தேதி : {{date}}",
+    "noDataAvailable": "இந்த பேக்கேஜிற்கு தரவு கிடைக்கவில்லை",
+    "active": "செயலில்",
+    "inactive": "செயலில் இல்லை",
+    "account": "கணக்கு",
+    "packageUpgrade": "பேக்கேஜ் மேம்பாடு",
+    "getExtraGB": "கூடுதல் GB பெறவும்",
+    "getDataAddOns": "டேட்டா கூடுதல்கள் பெறவும்"
+  },
+  "giftData": {
+    "instructions": {
+      "enterUsername": "நீங்கள் யாருக்கு தரவை வழங்க விரும்புகிறீர்களோ அந்த நபரின் பயனர் பெயரை உள்ளிடவும்",
+      "selectPackage": "VALIDATE RECEIVER ஐ தட்டி பேக்கேஜை தேர்ந்தெடுக்கவும்"
+    },
+    "labels": {
+      "receiversUsername": "பெறுபவரின் பயனர் பெயர்"
+    },
+    "placeholders": {
+      "enterUsername": "பயனர் பெயரை உள்ளிடவும்"
+    },
+    "buttons": {
+      "validateReceiver": "பெறுபவரை சரிபார்க்கவும்",
+      "continue": "தொடரவும்",
+      "close": "மூடவும்"
+    },
+    "warnings": {
+      "ensureCorrectUsername": "பயனர் பெயர் சரியானது என்பதை உறுதிசெய்யவும், இந்த பரிவர்த்தனையை மாற்ற முடியாது."
+    },
+    "messages": {
+      "validationSuccess": "பெறுபவர் வெற்றிகரமாக சரிபார்க்கப்பட்டார்!"
+    },
+    "errors": {
+      "missingSubscriberID": "சந்தாதாரர் ஐடி அல்லது பயனர் பெயர் காணவில்லை. தயவுசெய்து இரண்டையும் வழங்கவும்.",
+      "invalidSubscriberID": "நீங்கள் உள்ளிட்ட சந்தாதாரர் ஐடி தவறானது - தயவுசெய்து சரியான சந்தாதாரர் ஐடியை உள்ளிடவும்.",
+      "unexpectedError": "API அழைப்பின் போது எதிர்பாராத பிழை ஏற்பட்டது.",
+      "validationError": "சரிபார்ப்பின் போது பிழை ஏற்பட்டது."
+    },
+    "dialog": {
+      "processing": "செயலாக்கம்",
+      "success": "வெற்றி",
+      "processingMessage": "உங்கள் கோரிக்கையை செயலாக்கும் வரை காத்திருக்கவும்..."
+    }
+  },
+  "redeem": {
+    "instructions": {
+      "enterPromoCode": "வவுச்சரில் உள்ள விளம்பரக் குறியீட்டை உள்ளிட்டு",
+      "availOffer": "உங்களுக்கான சலுகையைப் பெறுங்கள்."
+    },
+    "labels": {
+      "enterVoucherID": "உங்கள் வவுச்சர் ஐடியை உள்ளிடவும்:"
+    },
+    "placeholders": {
+      "voucherID": "வவுச்சர் ஐடியை உள்ளிடவும்"
+    },
+    "buttons": {
+      "redeemVoucher": "வவுச்சரை மீட்டெடுக்கவும்",
+      "processing": "செயலாக்கம்..."
+    },
+    "messages": {
+      "successDefault": "வவுச்சர் வெற்றிகரமாக மீட்டெடுக்கப்பட்டது!"
+    },
+    "errors": {
+      "enterVoucherID": "தயவுசெய்து வவுச்சர் ஐடியை உள்ளிடவும்.",
+      "serviceIDMissing": "சேவை ஐடி காணவில்லை. வவுச்சரை மீட்டெடுக்க முடியவில்லை.",
+      "redeemFailed": "வவுச்சரை மீட்டெடுப்பதில் தோல்வி. தயவுசெய்து மீண்டும் முயற்சிக்கவும்.",
+      "unexpectedError": "எதிர்பாராத பிழை ஏற்பட்டது. தயவுசெய்து மீண்டும் முயற்சிக்கவும்."
+    },
+    "dialog": {
+      "processing": "செயலாக்கம்",
+      "success": "வெற்றி",
+      "processingMessage": "உங்கள் வவுச்சரை செயலாக்கும் வரை காத்திருக்கவும்..."
+    }
+  },
+  "circularProgress": {
+  "remaining": "மீதமுள்ள",
+  "used": "பயன்படுத்தப்பட்ட"
+},
+"extraGB": {
+    "pricePlan": "விலை திட்டம்",
+    "currency": "ரூ.",
+    "tax": "வரி",
+    "dataPlans": {
+      "range1to3": "1GB முதல் 3GB வரை",
+      "range5to19": "5GB முதல் 19GB வரை",
+      "range20to49": "20GB முதல் 49GB வரை",
+      "above50": "50GB க்கு மேல்"
+    },
+    "paymentMethods": {
+      "addToBill": "பில்லில் சேர்க்கவும்",
+      "payNow": "இப்போது செலுத்தவும்"
+    },
+    "termsAndConditions": {
+      "agree": "நான் ஒப்புக்கொள்கிறேன்",
+      "termsLink": "பொது விதிமுறைகள் மற்றும் நிபந்தனைகள்"
+    },
+    "messages": {
+      "success": "வெற்றி",
+      "addToBillSuccess": "பேக்கேஜ் உங்கள் பில்லில் வெற்றிகரமாக சேர்க்கப்பட்டது"
+    },
+    "errors": {
+      "selectAllOptions": "தயவுசெய்து தேவையான அனைத்து விருப்பங்களையும் தேர்ந்தெடுக்கவும்",
+      "planNotFound": "தேர்ந்தெடுக்கப்பட்ட திட்டம் கிடைக்கவில்லை",
+      "addToBillFailed": "பில்லில் சேர்க்க முடியவில்லை",
+      "noPackageOptions": "பேக்கேஜ் விருப்பங்கள் கிடைக்கவில்லை",
+      "loadPackageOptions": "பேக்கேஜ் விருப்பங்களை ஏற்ற முடியவில்லை",
+      "unexpectedError": "எதிர்பாராத பிழை ஏற்பட்டது"
+    }
+  },
+  "happyDay": {
+  "description": {
+    "part1": "உங்கள் மகிழ்ச்சியான நாளைத் தேர்ந்தெடுத்து",
+    "highlight": "வரம்பற்ற தரவு, இலவசம்",
+    "part2": "முழு நாளும் அனுபவிக்கவும்."
+  },
+  "buttons": {
+    "setDate": "தேதியை அமைக்கவும்",
+    "ok": "சரி"
+  },
+  "dialog": {
+    "success": "வெற்றி",
+    "error": "பிழை",
+    "successAlt": "வெற்றி",
+    "errorAlt": "பிழை"
+  },
+  "messages": {
+    "success": "வெற்றி!",
+    "error": "ஒரு பிழை ஏற்பட்டது."
+  },
+  "alerts": {
+    "missingServiceOrDate": "சேவை அடையாளம் அல்லது தேதி காணவில்லை. தயவுசெய்து சரியான தேதியைத் தேர்ந்தெடுக்கவும்."
+  },
+  "termsAndConditions": {
+    "title": "விதிமுறைகள் மற்றும் நிபந்தனைகள்",
+    "content1": "• எந்த நாளையும் தேர்ந்தெடுத்து 24 மணி நேரம் இலவச தரவை அனுபவிக்கவும்.",
+    "content2": "• உங்கள் தேவைக்கேற்ப, தேர்ந்தெடுக்கப்பட்ட தேதிக்கு ஒரு நாள் முன்பு தேதியை மாற்றலாம்."
+  }
+},
+"broadbandPostPaidGetAddOns": {
+      "activateNow": "இப்போது செயல்படுத்தவும் →"
+    },
+    "broadbandPackageUpgrader": {
+  "currentPackage": "தற்போதைய தொகுப்பு",
+  "monthlyPrice": "ரூ. {{price}} + வரி (மாதந்தோறும்)",
+  "standard": "நிலையான",
+  "free": "இலவசம்",
+  "packagePrice": "ரூ. {{price}} + வரி",
+  "perMonth": "(மாதந்தோறும்)",
+  "upgrade": "மேம்படுத்தவும்"
+},
+"bill": {
+  "title": "பில்",
+  "tabs": {
+    "totalPayable": "செலுத்த வேண்டிய மொத்தம்",
+    "billHistory": "பில் வரலாறு",
+    "billMethods": "பில் முறைகள்"
+  },
+    "no_privilege": "இலவசம் இல்லை",
+    "no_permission": "பில் முறை மாற்ற உங்களுக்கு அனுமதி இல்லை",
+    "current_method": "தற்போதைய பில் முறை",
+    "edit": "தொகுக்க",
+    "other_methods": "பிற முறைகள்",
+    "get_via": "உங்கள் பில்லை பெற",
+    "agree_terms": "விதிமுறைகளையும் நிபந்தனைகளையும் ஒப்புக்கொள்கிறேன்",
+    "subscribe": "சந்தா எடுக்கவும்"
+},
+"billDetails": {
+  "totalPayable": "செலுத்த வேண்டிய மொத்தம்",
+  "lastPayment": "கடைசி பணம்",
+  "monthEnding": "{{date}} இல் முடிவடையும் மாதத்திற்கு",
+  "paymentOn": "{{date}} அன்று",
+  "payNow": "இப்போது செலுத்தவும்"
+},"billhistory":{
+      "outstanding": "செலுத்த வேண்டியது",
+      "bill_value": "பில் மதிப்பு",
+      "payments": "கட்டணங்கள்",
+      "email_now": "இப்போது மின்னஞ்சல் செய்யவும்",
+      "download_ebill": "eBill ஐ பதிவிறக்கவும்",
+      "close": "மூடு"
+
+    },
+  "complaints":{
+    
+      "selectServiceLocation": "தயவுசெய்து உங்கள் சேவை இடத்தை தேர்ந்தெடுக்கவும்",
+      "serviceType": "சேவை வகை",
+      "contactNumber": "தொலைபேசி எண்",
+      "complaintDescription": "புகார் விளக்கம்",
+      "complaint": "புகார்கள்",
+      "submitYourComplaint": "உங்கள் புகாரை சமர்ப்பிக்கவும்",
+      "noFaultsFound": "எந்த தவறும் கண்டறியப்படவில்லை",
+      "serviceName": "சேவை பெயர்",
+      "faultRef": "தவறு குறிப்பு எண்",
+      "status": "நிலைமை",
+      "date": "தேதி"
+    
+    
+  },
+  "newServices": {
+    "title": "புதிய சேவைகள்",
+    "subtitle": "SLT ஃபைபர் ஹோம் லைன்",
+    "tagline": "வாழ்க்கையை சிறப்பாகவும், மகிழ்ச்சியுடனும், வேகமாகவும் வாழுங்கள்",
+    "requestNow": "இப்போது கோருங்கள்",
+    "firstName": "முதல் பெயர்",
+    "lastName": "கடைசி பெயர்",
+    "nic": "அடையாள எண் ",
+    "mobileNumber": "மொபைல் எண்",
+    "submit": "சமர்ப்பிக்கவும்"
+  },
+  "auth": {
+    "login":{
+     "login_to": "உங்கள்",
+     "myslt": "MySLT இல் உள்நுழையவும்",
+     "mysltWelcomeMsg": "SLT போர்ட்டலுக்கு வரவேற்கிறோம்",
+     "forgot_password": "கடவுச்சொல்லை மறந்துவிட்டீர்களா",
+     "or": "அல்லது",
+     "loginPlaceholderEmail": "உங்கள் மின்னஞ்சல் அல்லது தொலைபேசி எண்ணை உள்ளிடவும்",
+     "loginPlaceholderPassword": "உங்கள் கடவுச்சொல்லை உள்ளிடவும்",
+     "no_account": "கணக்கு இல்லையா",
+     "signups": "பதிவுசெய்யவும்",
+     "videoTitle": "எளிதாக இணைந்திருங்கள். இன்று SLT பயன்பாட்டைப் பதிவிறக்கவும்!"
+
+    },
+    "signup": {
+      "full_name": "முழுப் பெயர்",
+      "placeholderFull_name": "உங்கள் பெயரை உள்ளிடவும்",
+      "email_or_phone_short": "மின்னஞ்சல் / தொலைபேசி எண்",
+      "password": "கடவுச்சொல்",
+      "placeholderPassword": "உங்கள் கடவுச்சொல்லை உள்ளிடவும்",
+      "confirm_password": "கடவுச்சொல்லை உறுதிப்படுத்தவும்",
+      "placeholderConfirm_password": "உங்கள் கடவுச்சொல்லை உறுதிப்படுத்தவும்",
+      "agree": "எங்கள்",
+      "terms": "பயன்பாட்டு விதிமுறைகளை",
+      "and": "மற்றும்",
+      "privacy": "தனியுரிமை கொள்கையை ஏற்கிறேன்",
+      "already_account": "ஏற்கனவே கணக்கு உள்ளதா?",
+      "or_signin_with": "அல்லது இதைப் பயன்படுத்தி உள்நுழைக",
+      "login": "உள்நுழைய",
+      "create_an": "உருவாக்கவும்",
+      "account": "கணக்கு"
+    },
+    "contact_us": "தொடர்புக்கு",
+    "support": "உதவி "
+  },
+  "profile": {
+    "my_profile": "என் சுயவிவரம்",
+    "enter_mobile": "உங்கள் மொபைல் எண்ணை உள்ளிடவும்",
+    "name": "பெயர்",
+    "update": "புதுப்பிக்கவும்",
+    "manage_connection": "இணைப்பை நிர்வகிக்கவும்",
+    "logout": "வெளியே போ"
+  },"dailyusage": {
+    "base": "அடிப்படை தொகுப்பு",
+    "extra_gb": "கூடுதல் GB",
+    "loyalty": "நேர்மையான நம்பிக்கை",
+    "vas": "VAS தொகுப்புகள்",
+    "date": "தேதி",
+    "total_usage": "மொத்த பயன்படுத்தல்",
+    "usage": "பயன்பாடு",
+    "report": "அறிக்கை",
+    "view_detailed": "விவரமான பயன்பாட்டைக் காண்க",
+    "view": "காண்க",
+    "no_data_available": "தரவு கிடைக்கவில்லை",
+    "no_data": "தரவு இல்லை",
+    "inGB": "ஜிபியில்"
+  },
+  "detailedusage": {
+    "detailed_usage": "விவரமான பயன்பாடு",
+    "total_usage": "மொத்த பயன்பாடு",
+    "pd": "PD - உச்ச பதிவிறக்கம்",
+    "pu": "PU - உச்ச பதிவேற்றம்",
+    "od": "OD - அதிகபட்ச பதிவிறக்கம் இல்லை",
+    "ou": "OU - உச்சநிலை பதிவேற்றம் இல்லாதது"
+  },
+  "dreport": {
+    "unsubscribe_detailed": "விவரமான அறிக்கைகளுக்கு சந்தாவை நிறுத்தவும்",
+    "unsubscribe_usage": "பயன்பாட்டு அறிக்கையை நிறுத்தவும்",
+    "submit": "சமர்ப்பிக்கவும்"
+  },
+  "changedetails": {
+    "update_info": "தொடர்பு தகவலை புதுப்பிக்கவும்",
+    "enter_mobile": "உங்கள் மொபைல் எண்ணை உள்ளிடவும்",
+    "enter_full_name": "உங்கள் முழு பெயரை உள்ளிடவும்",
+    "enter_email": "உங்கள் மின்னஞ்சல் முகவரியை உள்ளிடவும்",
+    "email": "மின்னஞ்சல் முகவரி",
+    "full_name": "முழு பெயர்",
+    "mobile": "மொபைல் எண்"
+  },
+  "broadbanddetails": {
+    "mypackage": "என் திட்டம்",
+    "extra_gb": "கூடுதல் GB",
+    "addons": "கூட்டு சேவைகள்",
+    "bonus_data": "போனஸ் டேட்டா",
+    "free_data": "இலவச டேட்டா"
+  },
+  "peoTv": {
+    "noPeoTvConnection": "PEO TV இணைப்பு இல்லை",
+    "noPeoTvConnectionMessage": "உங்களிடம் PEO TV இணைப்பு இல்லை போல் தெரிகிறது. ஒன்றைக் கோருவோம்!",
+    "requestNow": "இப்போது கோரவும்",
+    "noDataToShow": "காண்பிக்க தரவு இல்லை",
+    "serviceId": "சேவை எண்",
+    "status": "நிலை",
+    "vod": {
+      "no_VOD_title": "வீடியோ ஆன் டிமாண்ட் சேவை இல்லை",
+      "no_VOD_message": "உங்களுக்கு VOD சேவைச் சந்தா இல்லை. இப்போதே குழுசேரவும்!",
+      "subscribe_now": "இப்போதே குழுசேர்",
+      "no_videos": "வீடியோக்கள் இல்லை"
+    },
+    "peoTvGo": {
+      "stay_in_control":"உங்கள் கட்டுப்பாட்டில் வைத்திருங்கள்",
+      "of_your_connection":"உங்கள் இணைப்பின்",
+      "with_the_new":"அனைத்துப் புதிய மற்றும் மேம்படுத்தப்பட்ட",
+      "explore": "மேலும் ஆராயுங்கள்"
+    }
+  },
+  "prepaid":{
+    "precommon": {
+       "loading": "ஏற்றுகிறது..."
+  },
+  "dataUsage": {
+    "gbUsedOf": "{{total}} GB இல் {{used}} GB பயன்படுத்தப்பட்டது",
+    "validTill": "செல்லுபடியாகும் தேதி: {{date}}",
+    "noDataToShow": "காண்பிக்க தரவு இல்லை"
+  },
+  "status": {
+    "active": "செயலில்",
+    "inactive": "செயலற்ற"
+  },
+  "buttons": {
+    "dataUsage": "தரவு பயன்பாடு",
+    "getMainPackage": "முக்கிய பேக்கேஜைப் பெறுங்கள்",
+    "getDataAddOns": "அட்ஒன்கள் தரவைப் பெறுங்கள்"
+  }
+  },
+ "homepage": {
+       "about-us": "எங்களைப் பற்றி",
+      "coverage-map": "கவரேஜ் வரைபடம்",
+      "support": "ஆதரவு",
+      "contact-us": "எங்களைத் தொடர்பு கொள்ளுங்கள்",
+      "text-1": "உங்கள் டிஜிட்டல் வாழ்க்கைக்காக வடிவமைக்கப்பட்ட தடையற்ற தொடர்பு மற்றும் அதிநவீன தொழில்நுட்பத்தை அனுபவிக்கவும்.",
+      "text-2": "எளிதான இணைப்பு, வரம்பற்ற சாத்தியங்கள்.",
+      "login": "உள்நுழைய",
+      "signup": "பதிவு செய்ய",
+       "chatbot": "வணக்கம்! இன்று நான் உங்களுக்கு எப்படி உதவ முடியும்?"
+  },
+  "mobile": {
+    "stay_in_control": "உங்கள் கட்டுப்பாட்டில் வைத்திருங்கள்",
+    "of_your_connection": "உங்கள் இணைப்பின்",
+    "with_the_all": "அனைத்துப் புதிய மற்றும் மேம்படுத்தப்பட்ட",
+    "more_info": "மேலதிக தகவல்"
+  }
+}

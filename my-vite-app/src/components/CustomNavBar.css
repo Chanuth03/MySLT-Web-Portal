@@ -1,0 +1,87 @@
+
+  
+  .logo-container-dashboard {
+    padding: 10px 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo-dashboard {
+    width: 140px;
+    height: auto;
+  }
+  
+  .service-list {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+  }
+  
+  .service-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 40px;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 5px;
+  }
+  
+  .service-item:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  
+  .service-item.active {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+  }
+  
+  .service-icon {
+    width: 36px;
+    height: 36px;
+    background-color: #1a3b66;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    color: #ffffff;
+    font-size: 16px;
+  }
+  
+  .service-item.active .service-icon {
+    background-color: #075b9c;
+  }
+  
+  .service-name-sidebar {
+    font-weight: 500;
+    font-size: 14px;
+    color: #ffffff;
+  }
+  
+  @media (max-width: 992px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    
+    .service-list {
+      flex-direction: row;
+      overflow-x: auto;
+      padding: 10px;
+      justify-content: space-around;
+    }
+    
+    .service-item {
+      flex-direction: column;
+      text-align: center;
+      padding: 10px;
+    }
+    
+    .service-icon {
+      margin-right: 0;
+      margin-bottom: 5px;
+    }
+  }

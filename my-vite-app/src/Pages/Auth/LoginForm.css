@@ -1,0 +1,518 @@
+.login-container {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 10; /* Ensure it's above the video */
+    margin-right: 8%;
+    flex-direction: column; /* Stack children vertically */
+  }
+  
+  .login-form-wrapper {
+    width: 100%;
+    max-width: 500px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  .login-tabs {
+    display: flex;
+    margin-bottom: 1rem; /* Reduced from 1.5rem */
+  }
+  
+  .tab {
+    flex: 1;
+    padding: 0.6rem; /* Reduced from 0.75rem */
+    background: none;
+    border: none;
+    border-bottom: 2px solid #e0e0e0;
+    font-size: 0.95rem; /* Reduced from 1rem */
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .tab.active {
+    border-bottom-color: #0056b3;
+    color: #0056b3;
+  }
+  
+  .login-title {
+    font-size: 1.3rem; /* Reduced from 1.5rem */
+    margin-bottom: 0.3rem; /* Reduced from 0.5rem */
+    color: #0056A2;
+    text-align: center;
+  }
+  
+  .highlight {
+    color: #32a852;
+    font-weight: 500;
+  }
+  
+  .login-subtitle {
+    font-size: 0.9rem; /* Reduced from 1rem */
+    color: #0056a2;
+    margin-bottom: 1.5rem; /* Reduced from 2rem */
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem; /* Reduced from 1.5rem */
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 0.85rem; /* Reduced from 0.9rem */
+    margin-bottom: 0.3rem; /* Reduced from 0.5rem */
+    color: #555;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 0.6rem 0.8rem; /* Reduced from 0.75rem 1rem */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 0.9rem; /* Reduced from 1rem */
+  }
+  
+  .password-input {
+    position: relative;
+  }
+  
+  .toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #777;
+  }
+  
+  .forgot-password {
+    text-align: right;
+    margin-bottom: 1rem; /* Reduced from 1.5rem */
+  }
+  
+  .forgot-password a {
+    color: #0056b3;
+    text-decoration: none;
+    font-size: 0.85rem; /* Reduced from 0.9rem */
+  }
+  
+  .login-button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #ccc;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .login-button:hover {
+    background-color: #999;
+  }
+
+  .login-button.active {
+    background-color: #0056b3;
+    cursor: pointer;
+  }
+  
+  .login-button.active:hover {
+    background-color: #004494;
+  }
+  
+  .divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 1.5rem 0;
+  }
+  
+  .divider::before,
+  .divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .divider span {
+    padding: 0 10px;
+    color: #999;
+    font-size: 0.9rem;
+  }
+  
+  .social-login {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .social-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .social-button img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .no-account {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    color: #0056b3;
+    font-weight: 400;
+  }
+  
+  .no-account a {
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .terms-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 0.8rem;
+  }
+  
+  .terms-links a {
+    color: #0056a2;
+    text-decoration: none;
+  }
+  
+  @media (max-width: 1100px) {
+    .login-container {
+      margin: 0 auto;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .app {
+      height: auto; /* Allow the app to expand as needed */
+    }
+    
+    .main-content {
+      flex-direction: column;
+      justify-content: flex-start; /* Changed from center */
+      align-items: center;
+      padding: 1rem;
+      margin-top: 1rem;
+      gap: 1.5rem;
+    }
+    
+    .left-side {
+      max-width: 100%;
+      text-align: center;
+    }
+    
+    .tagline h2 {
+      font-size: 1.3rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .login-container {
+      margin: 0 auto;
+      padding-bottom: 2rem; /* Ensure space at bottom */
+    }
+    
+    .login-form-wrapper {
+      padding: 1.2rem;
+    }
+    
+    .terms-links {
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    /* Make form elements more compact on mobile */
+    .form-group {
+      margin-bottom: 1.2rem;
+    }
+    
+    .login-title {
+      font-size: 1.3rem;
+    }
+    
+    .login-subtitle {
+      margin-bottom: 1.5rem;
+    }
+    
+    /* Ensure social login buttons have proper spacing */
+    .social-login {
+      gap: 0.8rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .navbar {
+      padding: 0.8rem;
+    }
+    
+    .logo {
+      max-width: 120px;
+    }
+    
+    .nav-links {
+      gap: 0.8rem;
+    }
+    
+    .nav-link {
+      font-size: 0.9rem;
+    }
+    
+    .app-button {
+      max-width: 130px;
+    }
+    
+    /* Further compact the form */
+    .login-form-wrapper {
+      padding: 1rem;
+    }
+    
+    .login-subtitle {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .login-form-wrapper {
+      padding: 1.5rem;
+    }
+    
+    .login-title {
+      font-size: 1.3rem;
+    }
+    
+    .terms-links {
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+    }
+  }
+
+  .terms-checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    font-size: 0.9rem;
+    padding-left: 28px;
+    user-select: none;
+  }
+  
+  .checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+    cursor: pointer;
+  }
+  
+ .checkmark {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 18px;
+  width: 18px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+  
+  .checkbox-container:hover input ~ .checkmark {
+    background-color: #f9f9f9;
+  }
+  
+  .checkbox-container input:checked ~ .checkmark {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .checkbox-container .checkmark:after {
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+
+  .terms-text {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .terms-text a {
+    color: #0056b3;
+    text-decoration: none;
+  }
+
+  .already-account {
+    text-align: center;
+    font-size: 0.9rem;
+    margin: 1.5rem 0;
+    color: #0056b3;
+    font-weight: 400;
+  }
+  
+  .already-account a {
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  /* Make signup button disabled when terms not checked */
+  .login-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Font weight for highlight class */
+  .highlight {
+    color: #32a852;
+    font-weight: 500;
+  }
+
+  /* Make the login container full width and center on small screens */
+@media (max-width: 768px) {
+  .login-container {
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 1rem;
+  }
+  .login-form-wrapper {
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 1rem;
+  }
+}
+
+/* Further compact and center on very small screens */
+@media (max-width: 480px) {
+  .login-container {
+    width: 100vw;
+    min-width: 0;
+    margin: 0;
+    padding: 0 0.5rem;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .login-form-wrapper {
+    max-width: 100vw;
+    min-width: 0;
+    padding: 0.7rem;
+    border-radius: 8px;
+  }
+  .login-title {
+    font-size: 1.1rem;
+  }
+  .login-subtitle {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+  }
+  .form-group input {
+    font-size: 0.85rem;
+    padding: 0.5rem 0.7rem;
+  }
+  .tab {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+  .login-button {
+    font-size: 0.95rem;
+    padding: 0.6rem;
+  }
+  .social-login {
+    gap: 0.5rem;
+  }
+  .social-button {
+    width: 36px;
+    height: 36px;
+  }
+  .terms-links {
+    font-size: 0.75rem;
+    gap: 0.3rem;
+  }
+  .already-account {
+    font-size: 0.85rem;
+    margin: 1rem 0;
+  }
+}
+
+/* Make sure the form doesn't overflow horizontally */
+.login-form-wrapper,
+.login-container {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* Add to your main CSS file, not LoginForm.css */
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.store-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .store-buttons a {
+    display: inline-block;
+  }
+  
+  .store-buttons img {
+    max-width: 150px;
+    height: auto;
+  }
+

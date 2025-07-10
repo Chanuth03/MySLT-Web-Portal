@@ -1,0 +1,57 @@
+.quick-access-menu {
+    width: 100%;
+  }
+  
+  .access-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+  
+  .access-card {
+    flex: 1;
+    background-color: rgba(0, 104, 177, 0.7);
+    border-radius: 8px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    color: #DFF0FF;
+  }
+  
+  .access-card:hover:not(.disabled):not(.selected) {
+    background-color: #159CFA;
+    color: #DFF0FF;
+  }
+  
+  .access-card.selected {
+    background-color: #159CFA;
+    color: #FFFFFF;
+  }
+  
+  .access-card.disabled {
+    background-color: #CCCCCC;
+    color: #999999;
+    cursor: not-allowed;
+  }
+  
+  .icon-container {
+    margin-right: 10px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .label {
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  

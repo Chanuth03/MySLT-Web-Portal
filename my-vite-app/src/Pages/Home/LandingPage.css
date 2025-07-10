@@ -1,0 +1,40 @@
+.landing-page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  } 
+
+  /* Logo styling */
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  width: 500px;
+}
+
+.slt-logo-landing {
+  max-width: 350px;
+  height: auto;
+  margin-bottom: 40px;
+}
+  .progress-bar-container {
+    width: 80%;
+    max-width: 500px;
+    height: 6px;
+    background-color: #1e3a5f; /* Darker blue for progress container */
+    border-radius: 3px;
+    overflow: hidden;
+    margin-top: 20px;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    background-color: #4cd964; /* Green color for progress bar */
+    transition: width 0.3s ease;
+    border-radius: 3px;
+  }
+  
