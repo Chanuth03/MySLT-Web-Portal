@@ -213,7 +213,7 @@ const LoginForm: React.FC<LoginFormProps> = ({ defaultTab = 'login', onSelectTab
 
                   <div className="terms-links">
                     <a href="#">{t('auth.t&c')}</a>
-                    <a href="#">{t('auth.support')}</a>
+                    <a href="#">{t('auth.support2')}</a>
                     <a href="#">{t('auth.customer_care')}</a>
                   </div>
                 </form>

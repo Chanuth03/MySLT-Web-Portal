@@ -20,16 +20,18 @@ function AuthLayout({ children }: AuthLayoutProps) {
             <div className="tagline">
               <h2>{t('auth.login.videoTitle')}</h2>
               <div className="app-buttons">
-                <a href="#" className="app-button ios">
+                <a href="https://apps.apple.com/om/app/myslt/id1492064957" className="app-button ios">
                   <img src="/app-store.png" alt="Download on the App Store" />
                 </a>
-                <a href="#" className="app-button android">
+                <a href="https://play.google.com/store/apps/details?id=com.slt.selfcare&pcampaignid=web_share" className="app-button android">
                   <img src="/google-play.png" alt="Get it on Google Play" />
                 </a>
               </div>
             </div>
           </div>
-          {children}
+          <div className="login-wrapper">
+            {children}
+          </div>
         </div>
       </div>
     </div>
