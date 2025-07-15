@@ -16,10 +16,11 @@ const HomePage: React.FC = () => {
     const { t } = useTranslation();
   
     useEffect(() => {
-        const timer = setTimeout(() => setAnimationCompleted(true), 100);
-        const platformTimer = setTimeout(() => setPlatformAnimationCompleted(true), 4500);
+        const logoTimer = setTimeout(() => setAnimationCompleted(true), 1000);
+        const platformTimer = setTimeout(() => setPlatformAnimationCompleted(true), 2000);
+
         return () => {
-            clearTimeout(timer);
+            clearTimeout(logoTimer);
             clearTimeout(platformTimer);
         };
     }, []);
