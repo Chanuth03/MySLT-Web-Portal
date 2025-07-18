@@ -301,7 +301,7 @@
   }
   
   .mascot-image {
-    height: 300px;
+    height: 350px;
     max-width: 90vw;
     z-index: 2;
     position: relative;
@@ -311,7 +311,7 @@
     width: 300px;
     max-width: 80vw;
     height: 100px;
-    margin-top: -20px;
+    margin-top: -40px;
     z-index: 1;
     opacity: 0;
   }
@@ -521,7 +521,7 @@
   
   .fade-in-element {
     animation: fadeIn 1s ease forwards;
-    animation-delay: 2s;
+    animation-delay: 1.5s;
     opacity: 0;
   }
   
@@ -583,7 +583,7 @@
     }
     
     .mascot-image {
-      height: 200px;
+      height: 250px;
     }
     
     .top-message, .bottom-message {
@@ -900,7 +900,7 @@
     max-width: 250px; 
   }
   .mascot-image { 
-    height: 200px; 
+    height: 250px; 
   }
   .marketing-message, .top-message, .bottom-message { 
     font-size: 0.9rem;
