@@ -221,7 +221,7 @@
 }
   
   .animate-logo {
-    animation: logoAnimation 1.5s ease forwards;
+    animation: logoAnimation 1s ease forwards;
   }
   
   @keyframes logoAnimation {
@@ -285,8 +285,8 @@
   }
   
   .animate-mascot {
-    animation: mascotAnimation 1.5s ease forwards;
-    animation-delay: 1.5s; /* Start after the logo animation */
+    animation: mascotAnimation 1s ease forwards;
+    animation-delay: 1s;
   }
   
   @keyframes mascotAnimation {
@@ -318,7 +318,7 @@
   
   .animate-platform {
     animation: platformAnimation 1s ease forwards;
-    animation-delay: 2s; /* Start after the mascot animation */
+    animation-delay: 1.2s;
   }
   
 @keyframes platformAnimation {
@@ -520,12 +520,12 @@
   }
   
   .fade-in-element {
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 2s;
     opacity: 0;
-    animation-delay: 3s;
-    animation: fadeInElements 1.5s ease forwards;
   }
   
-  @keyframes fadeInElements {
+  @keyframes fadeIn {
     0% {
       opacity: 0;
     }
