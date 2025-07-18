@@ -139,6 +139,7 @@ const MenuLeft: React.FC = () => {
         borderRadius: "10px",
         boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
         maxHeight: "500px",
+        boxSizing: "border-box",
       }}
     >
       {items.map((item, index) => (
@@ -149,7 +150,8 @@ const MenuLeft: React.FC = () => {
             borderRadius: "10px",
             padding: 1.1,
             color: "#ffffff",
-            minWidth: "100px",
+            width: "100%",
+            //minWidth: "100px",
             justifyContent: "center",
             margin: "2px",
             "&:hover": {

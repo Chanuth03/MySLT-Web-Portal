@@ -328,7 +328,10 @@
       "account": "account"
     },
     "contact_us": "CONTACT US",
-    "support": "SUPPORT"
+    "support": "SUPPORT",
+    "t&c": "Terms & Conditions",
+    "support2": "Support",
+    "customer_care": "Customer Care"
   },
   "profile": {
     "my_profile": "MY PROFILE",

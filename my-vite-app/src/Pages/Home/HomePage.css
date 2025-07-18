@@ -317,7 +317,7 @@
   }
   
   .animate-platform {
-    animation: platformAnimation 1.5s ease forwards;
+    animation: platformAnimation 1s ease forwards;
     animation-delay: 2s; /* Start after the mascot animation */
   }
   
@@ -521,7 +521,8 @@
   
   .fade-in-element {
     opacity: 0;
-    animation: fadeInElements 3s ease forwards;
+    animation-delay: 3s;
+    animation: fadeInElements 1.5s ease forwards;
   }
   
   @keyframes fadeInElements {

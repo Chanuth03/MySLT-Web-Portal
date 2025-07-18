@@ -24,6 +24,7 @@
 
 /* Main content layout - MOBILE FIRST (column) */
 .main-content {
+  width: 100%;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -81,6 +82,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center; /* Centers the video content */
 }
 
 .overlay {
@@ -136,6 +138,23 @@
 
 /* Desktop styles (min-width: 769px) */
 @media (min-width: 769px) {
+  .login-wrapper {
+    position: absolute; /* Better for desktop layout */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .login-container {
+    width: 100%;
+    padding-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
   .main-content {
     flex-direction: row;
     height: 100vh;
@@ -166,12 +185,42 @@
 
 /* Tablet adjustments (optional) */
 @media (max-width: 768px) {
+  .left-side {
+    display: contents; /* Breaks out of flex to allow reordering */
+  }
+
+  .navbar {
+    order: 1; /* Navbar stays at top */
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .login-wrapper {
+    order: 2; /* Form comes next */
+  }
+
+  .tagline {
+    order: 3; /* Tagline moves below form */
+    margin-top: 2rem;
+    text-align: center;
+  }
+
   .tagline h2 {
     font-size: 1.4rem;
   }
 
   .app-button {
     max-width: 150px;
+  }
+
+   .video-background video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
   }
 }
 
@@ -186,3 +235,7 @@
   }
 }
 
+.login-wrapper {
+  position: static; /* default for larger screens */
+  z-index: 2;
+}
