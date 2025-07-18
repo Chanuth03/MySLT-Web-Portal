@@ -246,6 +246,7 @@
   .logo-image {
     max-width: 500px;
     width: 90vw;
+    z-index: 0;
   }
   
   
@@ -259,16 +260,19 @@
     color: white;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
+    z-index: 2;
   }
   
   .top-message {
     top: 40%;
     left: 15%;
+    z-index: 2;
   }
   
   .bottom-message {
     top: 60%;
     left: 10%;
+    z-index: 2;
   }
   
   /* Fiber Mascot */
@@ -277,7 +281,7 @@
     top: 40%; /* Adjusted to 50% for vertical centering */
     left: 50%;
     transform: translate(-50%, -50%); /* Changed from -60% to -50% for true centering */
-    z-index: 2;
+    z-index: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -303,7 +307,7 @@
   .mascot-image {
     height: 350px;
     max-width: 90vw;
-    z-index: 2;
+    z-index: 0;
     position: relative;
   }
   
@@ -312,7 +316,7 @@
     max-width: 80vw;
     height: 100px;
     margin-top: -40px;
-    z-index: 1;
+    z-index: 0;
     opacity: 0;
   }
   
