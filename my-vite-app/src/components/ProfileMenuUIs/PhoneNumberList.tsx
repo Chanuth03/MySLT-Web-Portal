@@ -185,7 +185,7 @@ const PhoneNumberList: React.FC = () => {
                 },
               }}
             >
-              Add Account
+               {t('addacc.addbutton')}
             </Button>
           </Box>
         )}

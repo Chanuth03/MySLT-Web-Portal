@@ -12,6 +12,20 @@
     "close": "Close",
     "and":"and"
   },
+  "addacc": {
+    "addaccount":"ADD ACCOUNT",
+    "telephone_n" : "TELEPHONE",
+    "broadband": "BROADBAND",
+    "postpaid": "Post Paid",
+    "prepaid": "Pre Paid",
+    "telephone" : "Telephone ",
+    "accountNumber" : "Account Number :",
+    "nationalId" : "National ID Card Number :",
+    "broadbandId" : "Broadband ID :",
+    "password" : "Password :",
+    "submit": "SUBMIT",
+    "addbutton": "Add Account"
+  },
   "menu": {
     "summary": "Summary",
     "dailyUsage": "Daily Usage",

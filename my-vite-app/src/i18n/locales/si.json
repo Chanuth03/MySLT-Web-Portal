@@ -12,6 +12,22 @@
     "close": "වසන්න",
     "and":"සහ"
   },
+  
+   "addacc": {
+    "addaccount":"ගිණුම එකතු කරන්න",
+    "telephone_n": "දුරකථන",
+    "broadband": "බ්‍රෝඩ්බෑන්ඩ්",
+    "postpaid": "පසු ගෙවීම",
+    "prepaid": "පෙර ගෙවීම",
+    "telephone" : "දුරකථන අංකය ",
+    "accountNumber" : "ගිණුම් අංකය :",
+    "nationalId" : "ජාතික හැඳුනුම්පත :",
+    "broadbandId" : "බ්‍රෝඩ්බෑන්ඩ් ගිණුම් අංකය :",
+    "password" : "මුරපදය :",
+    "submit": "ඉදිරිපත් කරන්න",
+    "addbutton": "එකතු කරන්න"
+  },
+
   "menu": {
     "summary": "සාරාංශය",
     "dailyUsage": "දෛනික භාවිතය",

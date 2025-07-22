@@ -21,8 +21,10 @@ import React, { useState } from "react";
 import addAccountPrepaid from "../services/addAccount/addAccountPrepaid";
 import addAccountRequest from "../services/addAccount/addAccountRequest";
 import vasAccountRequest from "../services/addAccount/vasAccountRequest";
+import { useTranslation } from 'react-i18next';
 
 const AddAccountForm: React.FC = () => {
+  const { t } = useTranslation();
   const [tabValue, setTabValue] = useState(0);
   const [postPaid, setPostPaid] = useState(true);
   const [showForm, setShowForm] = useState(true);
@@ -134,7 +136,7 @@ const AddAccountForm: React.FC = () => {
           <Typography sx={{ fontSize: 16, color: "white" }}>👤+</Typography>
         </Box>
         <Typography variant="h6" component="div" sx={{ flexGrow: 1, color: "white", fontWeight: "bold" ,fontFamily: "Poppins, sans-serif",}}>
-          ADD ACCOUNT
+          {t('addacc.addaccount')} 
         </Typography>
         <IconButton
           aria-label="close"
@@ -166,9 +168,14 @@ const AddAccountForm: React.FC = () => {
           },
           "& .Mui-selected": { color: "white !important" },
         }}
+        
       >
-        <Tab label="TELEPHONE" />
-        <Tab label="BROADBAND" />
+        
+        <Tab label= {<>{t('addacc.telephone_n')}</>} />
+        <Tab label= {<>{t('addacc.broadband')}</>} />
+        
+        
+
       </Tabs>
 
       {/* Form */}
@@ -195,7 +202,7 @@ const AddAccountForm: React.FC = () => {
                   }
                   label={
                     <Typography sx={{ color: "white", fontSize: "14px", ml: -1 ,fontFamily: "Poppins, sans-serif",}}>
-                      Post Paid
+                      {t('addacc.postpaid')}
                     </Typography>
                   }
                   sx={{ mr: 6 }}
@@ -213,7 +220,7 @@ const AddAccountForm: React.FC = () => {
                   }
                   label={
                     <Typography sx={{ color: "white", fontSize: "14px", ml: -1 ,fontFamily: "Poppins, sans-serif",}}>
-                      Pre Paid
+                      {t('addacc.prepaid')}
                     </Typography>
                   }
                 />
@@ -230,7 +237,7 @@ const AddAccountForm: React.FC = () => {
                 fontFamily: "Poppins, sans-serif",
               }}
             >
-              Telephone :
+              {t('addacc.telephone')} :
             </Typography>
             <TextField
               fullWidth
@@ -272,7 +279,7 @@ const AddAccountForm: React.FC = () => {
                     fontFamily: "Poppins, sans-serif",
                   }}
                 >
-                  Account Number :
+                  {t('addacc.accountNumber')}
                 </Typography>
                 <TextField
                   fullWidth
@@ -313,7 +320,7 @@ const AddAccountForm: React.FC = () => {
                 fontFamily: "Poppins, sans-serif",
               }}
             >
-              National ID Card Number :
+             {t('addacc.nationalId')}
             </Typography>
             <TextField
               fullWidth
@@ -355,7 +362,7 @@ const AddAccountForm: React.FC = () => {
                 fontFamily: "Poppins, sans-serif",
               }}
             >
-              Broadband ID :
+              {t('addacc.broadbandId')} 
             </Typography>
             <TextField
               fullWidth
@@ -394,7 +401,7 @@ const AddAccountForm: React.FC = () => {
                 fontFamily: "Poppins, sans-serif",
               }}
             >
-              Password :
+              {t('addacc.password')} 
             </Typography>
             <TextField
               fullWidth
@@ -444,7 +451,7 @@ const AddAccountForm: React.FC = () => {
               "&:hover": { backgroundColor: "#5ad072" },
             }}
           >
-            SUBMIT
+            {t('addacc.submit')}
           </Button>
         </Box>
       </form>

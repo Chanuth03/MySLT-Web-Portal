@@ -39,7 +39,7 @@ const HomePage: React.FC = () => {
         }
     };
 
-    const navigateToDashboard = () => navigate('/dashboard/broadband/summary');
+    
 
     useEffect(() => {
         const handleEscKey = (event: KeyboardEvent) => {
@@ -104,7 +104,7 @@ const HomePage: React.FC = () => {
                 </div>
                 
                 <div className={`next-button ${platformAnimationCompleted ? 'fade-in-element' : 'hidden-element'}`}>
-                    <button className="circle-btn" onClick={navigateToDashboard}>
+                    <button className="circle-btn" onClick={() => navigate('/login')}>
                         <span className="arrow-icon">›</span>
                     </button>
                 </div>

@@ -12,6 +12,21 @@
     "close": "மூடு",
     "and":"மற்றும் "
   },
+  "addacc": {
+    "addaccount":"கணக்கை சேர்",
+    "telephone_n" : "தொலைபேசி",
+    "broadband": "பிராட்பாண்ட்",
+    "postpaid": "போஸ்ட் பேயிட்",
+    "prepaid": "ப்ரீ பேயிட்",
+    "telephone" : "தொலைபேசி ",
+    "accountNumber" : "கணக்கு எண் :",
+    "nationalId" : "தேசிய அடையாள எண் :",
+    "broadbandId" : "பிராட்பாண்ட் ஐடி :",
+    "password" : "கடவுச்சொல் :",
+    "submit": "சமர்ப்பிக்கவும்",
+    "addbutton": "சேர்"
+
+  },
   "menu": {
     "summary": "சுருக்கம்",
     "dailyUsage": "தினசரி பயன்பாடு",
