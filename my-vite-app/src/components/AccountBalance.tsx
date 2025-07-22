@@ -76,41 +76,26 @@ const AccountBalance: React.FC = () => {
   };
 
   return (
-    <div className="account-balance-container">
-      <div className="balance-info">
-        <div className="balance-label">
-          {isPrepaid ? t('accountBalance.balance') : t('accountBalance.totalPayable')}
-        </div>
-        {/* Commented out as in original
-        <div className="expire-time">
-          {isPrepaid ? "Expires on " : "For month Ending at "}
-          <span className="expire-date">{expireTime}</span>
-        </div> */}
-        <div className="amount">
-       {t('accountBalance.currency')}{isPrepaid ? amount : billingAmount || "0.00"}
-      </div>
-      </div>
-      
-      
-
-      <div className="payment-actions">
-      <button 
-        className="action-button-1"
-        onClick={handleButtonClick}
-      >
-         {isPrepaid ? t('menu.transaction') : t('accountBalance.payNow')}
+  <div className="account-balance-container">
+    <div className="balance-info">
+      <span className="balance-label">
+        {isPrepaid ? t('accountBalance.balance') : t('accountBalance.totalPayable')}:
+      </span>
+      <span className="amount">
+        {t('accountBalance.currency')}{isPrepaid ? amount : billingAmount || "0.00"}
+      </span>
+    </div>
+    
+    <div className="payment-actions">
+      <button className="action-button-1" onClick={handleButtonClick}>
+        {isPrepaid ? t('menu.transaction') : t('accountBalance.payNow')}
       </button>
-      
-      <button 
-        className="action-button-2"
-        // onClick={handleButtonClick}
-      >
+      <button className="action-button-2">
         {t('accountBalance.billHistory')}
       </button>
-      </div>
-      
     </div>
-  );
+  </div>
+);
 };
 
 export default AccountBalance;

@@ -1,0 +1,44 @@
+.mobile-quick-access {
+  padding: 10px 15px;
+  width: 100%;
+}
+
+.mobile-quick-access .access-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  width: 100%;
+}
+
+.mobile-quick-access .access-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  background: #0068b1b3;
+  border-radius: 8px;
+  text-align: center;
+  min-height: 80px;
+  transition: background-color 0.2s; /* Added for consistency */
+}
+
+.mobile-quick-access .access-card.selected {
+  background: #159CFA;
+}
+
+.mobile-quick-access .access-card:hover:not(.selected) {
+  background: rgba(21, 156, 250, 0.8); /* Added hover state */
+}
+
+.mobile-quick-access .icon-container {
+  font-size: 20px;
+  margin-bottom: 6px;
+  color: #DFF0FF; /* Added for consistency */
+}
+
+.mobile-quick-access .label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #DFF0FF; /* Added for consistency */
+}

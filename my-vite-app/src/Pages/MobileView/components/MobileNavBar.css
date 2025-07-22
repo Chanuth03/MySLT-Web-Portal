@@ -1,0 +1,76 @@
+/* MobileNavBar.css */
+/* Add this to MobileNavBar.css */
+.mobile-nav-bar .logo-container-dashboard {
+  display: none;
+}
+
+.mobile-view .mobile-nav-bar {
+    padding: 10px 15px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.mobile-view .service-list {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.mobile-view .service-item {
+    flex-direction: column;
+    padding: 8px 12px;
+    min-width: 80px;
+    white-space: nowrap;
+}
+
+.mobile-view .service-icon {
+    margin-right: 0;
+    margin-bottom: 5px;
+}
+
+/* MobileNavBar.css */
+.mobile-nav-bar {
+  padding: 10px 15px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+  background: #0F3B7A; /* Increased opacity */
+  border-radius: 12px;
+  margin: 8px 0;
+}
+
+.mobile-nav-bar .service-list {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  padding: 8px 0;
+  width: max-content;
+  min-width: 100%;
+}
+
+.mobile-nav-bar .service-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px 12px;
+  min-width: 80px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  white-space: nowrap;
+  transition: background-color 0.2s; /* Added for consistency */
+}
+
+.mobile-nav-bar .service-item.active {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.mobile-nav-bar .service-item:hover {
+  background: rgba(255, 255, 255, 0.15); /* Added hover state */
+}
+
+.mobile-nav-bar .service-icon {
+  margin: 0 0 5px 0;
+  font-size: 20px;
+  color: #ffffff; /* Added for consistency */
+}

@@ -1,0 +1,13 @@
+.mobile-banner-container {
+  padding: 0 15px;
+}
+
+.banner-container {
+  height: 120px;
+  margin-bottom: 10px;
+}
+
+.service-icons {
+  justify-content: center;
+  padding: 10px 0;
+}

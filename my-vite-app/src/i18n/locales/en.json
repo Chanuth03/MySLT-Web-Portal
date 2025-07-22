@@ -76,7 +76,7 @@
     "valueAddedServices": "Value Added Services"
   },
   "accountBalance": {
-    "balance": "Balance :",
+    "balance": "Balance ",
     "totalPayable": "Total Payable :",
     "currency": "Rs. ",
     "payNow": "Pay Now",

@@ -1,15 +1,15 @@
+.mobile-account-balance {
+  padding: 15px;
+  width: 100%;
+}
+
 .account-balance-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  margin-top: 15px;
-  min-height: 100px;
-  border-radius: 20px;
-  color: #1a1a1a;
+  padding: 12px 15px;
+  border-radius: 10px;
   background: linear-gradient(135deg, #4ade80, #128b37);
-  padding: 0.5em 30px;
-  gap: 8px;
 }
 
 .balance-info {
@@ -21,60 +21,42 @@
 .balance-label {
   color: #fff;
   font-weight: 500;
+  font-size: 14px;
 }
 
 .amount {
   color: #128b37;
   background-color: #fff;
   border-radius: 20px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   padding: 4px 12px;
-  white-space: nowrap;
 }
 
 .payment-actions {
   display: flex;
-  gap: 10px;
+  gap: 8px;
 }
 
 .action-button-1, 
 .action-button-2 {
-  padding: 8px 16px;
+  padding: 6px 12px;
   border-radius: 6px;
   font-weight: 600;
-  font-size: 14px;
-  white-space: nowrap;
-  min-width: 100px;
+  font-size: 12px;
+  min-width: 80px;
   background-color: #0E8E37;
-  border: 1px solid white;
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Changed from solid white */
   color: #fff;
+  transition: background-color 0.2s; /* Added for consistency */
 }
 
 .action-button-1:hover, 
 .action-button-2:hover {
-  background-color: #79D84A;
+  background-color: #79D84A; /* Added hover state for mobile */
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .account-balance-container {
-    padding: 12px 15px;
-  }
-  
-  .amount {
-    font-size: 16px;
-  }
-  
-  .action-button-1, 
-  .action-button-2 {
-    padding: 6px 12px;
-    min-width: 80px;
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 480px) {
+@media (max-width: 400px) {
   .account-balance-container {
     flex-direction: column;
     gap: 12px;

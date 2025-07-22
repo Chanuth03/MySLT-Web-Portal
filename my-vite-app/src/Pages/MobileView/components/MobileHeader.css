@@ -1,0 +1,33 @@
+.mobile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #0F3B7A;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Added for better visibility */
+}
+
+.mobile-logo {
+  width: 100px;
+  height: auto;
+}
+
+.avatar-image {
+  
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.mobile-account-selector {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+/* Added for better mobile account selector visibility */
+.mobile-account-selector .account-select {
+  background-color: rgba(0, 104, 177, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
