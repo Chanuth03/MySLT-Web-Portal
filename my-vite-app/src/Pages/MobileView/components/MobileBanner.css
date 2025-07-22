@@ -7,7 +7,51 @@
   margin-bottom: 10px;
 }
 
+.value-added-services {
+  padding: 0 5px;
+}
+
 .service-icons {
-  justify-content: center;
+  display: flex;
+  justify-content: space-between;
   padding: 10px 0;
+  width: 100%;
+  gap: 5px;
+}
+
+.service-icon-rightside {
+  flex: 1;
+  max-width: calc(20% - 5px); /* 5 icons with gap */
+  aspect-ratio: 1/1; /* Maintain square shape */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  background-color: transparent; /* Remove white background */
+  border: none; /* Remove any borders */
+  padding: 0; /* Remove padding */
+}
+
+.service-icon-rightside:hover {
+  transform: scale(1.05);
+}
+
+.vas-icon-image {
+  width: 100%; /* Make image fill container */
+  height: 100%; /* Make image fill container */
+  object-fit: contain; /* Keep image aspect ratio */
+  border-radius: 8px;
+}
+
+/* Adjust for very small screens */
+@media (max-width: 350px) {
+  .service-icons {
+    gap: 3px;
+  }
+  
+  .service-icon-rightside {
+    max-width: calc(20% - 3px);
+  }
 }

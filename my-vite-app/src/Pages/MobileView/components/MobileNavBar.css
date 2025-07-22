@@ -15,6 +15,7 @@
     flex-direction: row;
     gap: 10px;
     padding: 10px 0;
+    overflow-x: auto;
 }
 
 .mobile-view .service-item {
@@ -32,45 +33,94 @@
 /* MobileNavBar.css */
 .mobile-nav-bar {
   padding: 10px 15px;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
   width: 100%;
-  background: #0F3B7A; /* Increased opacity */
+  background: #0F3B7A;
   border-radius: 12px;
   margin: 8px 0;
+  box-sizing: border-box;
 }
 
 .mobile-nav-bar .service-list {
   display: flex;
   flex-direction: row;
-  gap: 12px;
+  justify-content: space-between;
+  gap: 8px;
   padding: 8px 0;
-  width: max-content;
-  min-width: 100%;
+  width: 100%;
 }
 
 .mobile-nav-bar .service-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 8px 12px;
-  min-width: 80px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
+  padding: 8px 4px;
+  flex: 1;
+  min-width: 0;
   white-space: nowrap;
-  transition: background-color 0.2s; /* Added for consistency */
+  transition: all 0.3s ease;
+  color: rgba(255, 255, 255, 0.7);
+  position: relative;
+  background: none !important; /* Force remove any background */
+  border-radius: 0 !important; /* Remove any border radius */
 }
 
+/* Enhanced glowing effect for active item */
 .mobile-nav-bar .service-item.active {
-  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
 }
 
-.mobile-nav-bar .service-item:hover {
-  background: rgba(255, 255, 255, 0.15); /* Added hover state */
+.mobile-nav-bar .service-item.active .service-icon {
+  color: #4fc3f7;
+  text-shadow: 0 0 8px rgba(79, 195, 247, 0.8);
+  transform: scale(1.15);
+}
+
+.mobile-nav-bar .service-item.active .service-name-sidebar {
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.6);
+}
+
+/* Pulsing dot indicator */
+.mobile-nav-bar .service-item.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6px;
+  height: 6px;
+  background: #4fc3f7;
+  border-radius: 50%;
+  box-shadow: 0 0 6px 2px rgba(79, 195, 247, 0.8);
+  animation: glow-pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes glow-pulse {
+  0% { transform: translateX(-50%) scale(1); opacity: 0.8; }
+  50% { transform: translateX(-50%) scale(1.3); opacity: 1; }
+  100% { transform: translateX(-50%) scale(1); opacity: 0.8; }
 }
 
 .mobile-nav-bar .service-icon {
-  margin: 0 0 5px 0;
+  margin: 0 0 4px 0;
   font-size: 20px;
-  color: #ffffff; /* Added for consistency */
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+.mobile-nav-bar .service-name-sidebar {
+  font-weight: 500;
+  font-size: 11px;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.mobile-nav-bar .service-item:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Disabled state */
+.mobile-nav-bar .service-item.disabled {
+  opacity: 0.5;
+  pointer-events: none;
 }
