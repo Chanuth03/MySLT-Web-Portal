@@ -8,6 +8,7 @@ import MobileContentSection from './components/MobileContentSection';
 import useStore from '../../services/useAppStore';
 import ContentSection from '../../components/ContentSection';
 import Mobile from '../../components/Mobile/Mobile';
+import './MobileLayout.css'; // Assuming you have a CSS file for styling
 
 const MobileLayout = () => {
   const { selectedNavbarItem } = useStore();
