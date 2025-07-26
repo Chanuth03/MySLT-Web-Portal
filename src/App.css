@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.content-container {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main content layout - MOBILE FIRST (column) */
+.main-content {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  height: auto;
+}
+
+.left-side {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  padding: 1rem 0;
+}
+
+.tagline {
+  margin-top: auto;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.tagline h2 {
+  font-size: 16px;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+/* App buttons - positioned below form on mobile */
+.left-side .app-buttons {
+  order: 2; /* Moves below form */
+  margin: 2rem auto;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+/* Right side (login form) */
+.right-side {
+  order: 1; /* Form comes first */
+  width: 100%;
+}
+
+/* Video background styles */
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.video-background video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center; /* Centers the video content */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(0, 0, 100, 0.7) 0%, rgba(0, 200, 150, 0.7) 100%);
+}
+
+/* App buttons styling */
+.app-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.app-button {
+  display: block;
+  max-width: 180px;
+}
+
+.app-button img {
+  width: 100%;
+  height: auto;
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: opacity 0.3s;
+}
+
+.nav-link:hover {
+  opacity: 0.8;
+}
+
+/* Desktop styles (min-width: 769px) */
+@media (min-width: 769px) {
+  .login-wrapper {
+    position: absolute; /* Better for desktop layout */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .login-container {
+    width: 100%;
+    padding-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .main-content {
+    flex-direction: row;
+    height: 100vh;
+    padding: 0 2rem;
+  }
+
+  .left-side {
+    width: 50%;
+    padding-right: 2rem;
+    justify-content: space-between;
+  }
+
+  .tagline {
+    margin-bottom: 10%;
+  }
+
+  /* Reset mobile ordering */
+  .left-side .app-buttons {
+    order: initial;
+    margin: 0;
+  }
+
+  .right-side {
+    order: initial;
+    width: 50%;
+  }
+}
+
+/* Tablet adjustments (optional) */
+@media (max-width: 768px) {
+  .left-side {
+    display: contents; /* Breaks out of flex to allow reordering */
+  }
+
+  .navbar {
+    order: 1; /* Navbar stays at top */
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .login-wrapper {
+    order: 2; /* Form comes next */
+  }
+
+  .tagline {
+    order: 3; /* Tagline moves below form */
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .tagline h2 {
+    font-size: 1.4rem;
+  }
+
+  .app-button {
+    max-width: 150px;
+  }
+
+   .video-background video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+}
+
+/* Small mobile adjustments */
+@media (max-width: 480px) {
+  .nav-link {
+    font-size: 0.9rem;
+  }
+
+  .app-button {
+    max-width: 130px;
+  }
+}
+
+.login-wrapper {
+  position: static; /* default for larger screens */
+  z-index: 2;
+}

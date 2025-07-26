@@ -1,0 +1,178 @@
+.account-balance-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    align-items: center;
+    width: 100%;
+    height: 9vh;
+    min-height: 60px;
+    border-radius: 10px;
+    color: #1a1a1a;
+    background: linear-gradient(135deg, #4ade80, #128b37);
+    padding: 0.1em 30px;
+    gap: 8px;
+  }
+  
+  .balance-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .balance-label {
+    color: #fff;
+    font-weight: 500;
+    margin-right: 30px;
+  }
+  
+  .expire-time {
+    color: #0056A2;
+    font-size: 12px;
+  }
+  
+  .expire-date {
+    font-size: 12px;
+    font-weight: 700;
+  }
+  
+  .amount {
+    color: #128b37;
+    background-color: #fff;
+    border-radius: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 5px 10px;
+  }
+  
+  .payment-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .action-button-1, .action-button-2 {
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .action-button-1 {
+    background-color: #0E8E37;
+    border: 1px solid white;
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  .action-button-2 {
+    background-color: #0E8E37;
+    border: 1px solid white;
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  .action-button-1:hover, .action-button-2:hover {
+    background-color: #79D84A;
+  }
+  
+  /* Media Queries for Responsive Design */
+  
+  /* Large Screens (Desktops) */
+  @media screen and (min-width: 1200px) {
+    .account-balance-container {
+      padding: 0.1em 40px;
+    }
+    
+    .action-button-1, .action-button-2 {
+      padding: 12px 24px;
+      font-size: 16px;
+    }
+    
+    .amount {
+      font-size: 24px;
+      padding: 6px 12px;
+    }
+  }
+  
+  /* Medium Screens (Tablets and Small Desktops) */
+  @media screen and (max-width: 1199px) and (min-width: 768px) {
+    .account-balance-container {
+      padding: 0.1em 25px;
+    }
+    
+    .balance-label {
+      margin-right: 20px;
+    }
+  }
+  
+  /* Small Screens (Large Phones and Small Tablets) */
+  @media screen and (max-width: 767px) and (min-width: 481px) {
+    .account-balance-container {
+      padding: 0.1em 20px;
+      flex-wrap: wrap;
+      height: auto;
+      min-height: 120px;
+    }
+    
+    .balance-info {
+      width: 100%;
+      justify-content: flex-start;
+      margin-bottom: 10px;
+    }
+    
+    .amount {
+      flex-grow: 1;
+      text-align: center;
+      margin-right: 10px;
+    }
+    
+    .payment-actions {
+      flex-grow: 1;
+    }
+    
+    .action-button-1, .action-button-2 {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  }
+  
+  /* Extra Small Screens (Mobile Phones) */
+  @media screen and (max-width: 480px) {
+    .account-balance-container {
+      flex-direction: column;
+      height: auto;
+      min-height: 160px;
+      padding: 15px;
+      gap: 15px;
+    }
+    
+    .balance-info {
+      width: 100%;
+      justify-content: center;
+    }
+    
+    .balance-label {
+      margin-right: 10px;
+      font-size: 16px;
+    }
+    
+    .amount {
+      width: 100%;
+      text-align: center;
+      font-size: 22px;
+    }
+    
+    .payment-actions {
+      width: 100%;
+      gap: 8px;
+    }
+    
+    .action-button-1, .action-button-2 {
+      flex: 1;
+      padding: 8px 12px;
+      font-size: 14px;
+    }
+  }
+

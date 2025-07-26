@@ -1,0 +1,444 @@
+  {
+  "common": {
+    "underConstruction": "Under Construction",
+    "loading": "Loading...",
+    "error": "Error",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "save": "Save",
+    "back": "Back",
+    "next": "Next",
+    "currency": "Rs.",
+    "close": "Close",
+    "and":"and"
+  },
+  "menu": {
+    "summary": "Summary",
+    "dailyUsage": "Daily Usage",
+    "giftData": "Gift Data",
+    "history": "History",
+    "redeemData": "Redeem Data",
+    "happyDay": "Happy Day",
+    "subscription": "Subscription",
+    "contactInformationChange": "Change Contact Information",
+    "broadbandPasswordChange": "Change Broadband Password",
+    "detailedUsageDetails": "Detailed Usage Details",
+    "protocolReport": "Protocol Report",
+    "postPaidPackageUpgrade": "Package Upgrade",
+    "getExtraGB": "Get Extra GB",
+    "getPostpaidAddOnPackages": "Get Data Add-Ons",
+    "disableDetailReport": "Disable Detail Report",
+    "mainPackages": "Main Packages",
+    "dataAddOns": "Data Add-Ons",
+    "getBroadbandMainPackage": "Get Broadband Main Package",
+    "getBroadbandAddOnPackage": "Get Broadband Add-On Package",
+    "transaction": "Transaction",
+    "myPackage": "My Package",
+    "vod": "Video On Demand",
+    "peoTvGo": "PeoTV Go",
+    "packages": "Packages",
+    "callForwarding": "Call Forwarding",
+    "newServices": "New Services",
+    "promotion": "Promotion",
+    "digitalLife": "Digital Life",
+    "bill": "Bill",
+    "hotDevices": "Hot Devices",
+    "complaints": "Complaints",
+    "submitComplaint": "Submit Your Complaint",
+    "myProfile": "My Profile",
+    "manageConnections": "Manage Connections",
+    "more": "More",
+    "from": "From",
+    "to": "To",
+    "search": "Search"
+  },
+  "navbar": {
+    "broadband": "Broadband",
+    "peoTV": "PeoTV",
+    "voice": "Voice",
+    "mobile": "Mobile",
+    "promotions": "Promotions"
+  },
+  "languages": {
+    "english": "English",
+    "sinhala": "සිංහල",
+    "tamil": "தமிழ்"
+  },
+  "quickAccessMenu": {
+    "newServices": "New Services",
+    "digitalLife": "Digital Life",
+    "bill": "Bill",
+    "hotDevices": "Hot Devices",
+    "complaints": "Complaints",
+    "more": "More"
+  },
+  "valueAddedServices": {
+    "valueAddedServices": "Value Added Services"
+  },
+  "accountBalance": {
+    "balance": "Balance :",
+    "totalPayable": "Total Payable :",
+    "currency": "Rs. ",
+    "payNow": "Pay Now",
+    "billHistory": "Bill History"
+  },
+  "broadbandDetails": {
+    "myPackage": "My Package",
+    "extraGB": "Extra GB",
+    "bonusData": "Bonus Data",
+    "addOns": "Add-Ons",
+    "freeData": "Free Data",
+    "yourSpeedStatus": "Your speed is {{status}} right now",
+    "dataUsage": "{{used}} GB USED OF {{limit}} GB",
+    "validTill": "Valid Till : {{date}}",
+    "noDataAvailable": "No data available for this package",
+    "active": "Active",
+    "inactive": "Inactive",
+    "account": "Account",
+    "packageUpgrade": "Package Upgrade",
+    "getExtraGB": "Get Extra GB",
+    "getDataAddOns": "Get Data Add-Ons"
+  },
+  "giftData": {
+    "instructions": {
+      "enterUsername": "Enter the username of the person to whom you wish to",
+      "selectPackage": "Select the package by tapping VALIDATE RECEIVER"
+    },
+    "labels": {
+      "receiversUsername": "Receiver's Username"
+    },
+    "placeholders": {
+      "enterUsername": "Enter username"
+    },
+    "buttons": {
+      "validateReceiver": "Validate Receiver",
+      "continue": "Continue",
+      "close": "Close"
+    },
+    "warnings": {
+      "ensureCorrectUsername": "Ensure the username is correct, as this transaction cannot be reversed."
+    },
+    "messages": {
+      "validationSuccess": "Receiver validated successfully!"
+    },
+    "errors": {
+      "missingSubscriberID": "Subscriber ID or username is missing. Please provide both.",
+      "invalidSubscriberID": "Subscriber ID you entered is Invalid – Please enter a correct Subscriber ID.",
+      "unexpectedError": "Unexpected error occurred during the API call.",
+      "validationError": "An error occurred during validation."
+    },
+    "dialog": {
+      "processing": "Processing",
+      "success": "Success",
+      "processingMessage": "Please wait while we process your request..."
+    }
+  },
+  "redeem": {
+    "instructions": {
+      "enterPromoCode": "Enter The Promo Code On The Voucher To",
+      "availOffer": "Avail Yourself Of The Offer."
+    },
+    "labels": {
+      "enterVoucherID": "Enter your voucher ID:"
+    },
+    "placeholders": {
+      "voucherID": "Enter voucher ID"
+    },
+    "buttons": {
+      "redeemVoucher": "REDEEM VOUCHER",
+      "processing": "Processing..."
+    },
+    "messages": {
+      "successDefault": "Voucher redeemed successfully!"
+    },
+    "errors": {
+      "enterVoucherID": "Please enter a voucher ID.",
+      "serviceIDMissing": "Service ID is missing. Unable to redeem voucher.",
+      "redeemFailed": "Failed to redeem voucher. Please try again.",
+      "unexpectedError": "An unexpected error occurred. Please try again."
+    },
+    "dialog": {
+      "processing": "Processing",
+      "success": "Success",
+      "processingMessage": "Please wait while we process your voucher..."
+    }
+  },
+  "circularProgress": {
+  "remaining": "REMAINING",
+  "used": "USED"
+},
+"extraGB": {
+    "pricePlan": "Price Plan",
+    "currency": "LKR",
+    "tax": "Tax",
+    "dataPlans": {
+      "range1to3": "1GB to 3GB",
+      "range5to19": "5GB to 19GB",
+      "range20to49": "20GB to 49GB",
+      "above50": "Above 50GB"
+    },
+    "paymentMethods": {
+      "addToBill": "Add to Bill",
+      "payNow": "Pay Now"
+    },
+    "termsAndConditions": {
+      "agree": "I agree to the",
+      "termsLink": "general terms and conditions"
+    },
+    "messages": {
+      "success": "Success",
+      "addToBillSuccess": "Package added to your bill successfully"
+    },
+    "errors": {
+      "selectAllOptions": "Please select all required options",
+      "planNotFound": "Selected plan not found",
+      "addToBillFailed": "Failed to add to bill",
+      "noPackageOptions": "No package options available",
+      "loadPackageOptions": "Failed to load package options",
+      "unexpectedError": "An unexpected error occurred"
+    }
+  },
+  "happyDay": {
+    "description": {
+      "part1": "Choose your Happy Day and enjoy",
+      "highlight": "Unlimited Data, FREE",
+      "part2": "for the entire day."
+    },
+    "buttons": {
+      "setDate": "Set Date",
+      "ok": "Ok"
+    },
+    "dialog": {
+      "success": "Success",
+      "error": "Error",
+      "successAlt": "Success",
+      "errorAlt": "Error"
+    },
+    "messages": {
+      "success": "Success!",
+      "error": "An error occurred."
+    },
+    "alerts": {
+      "missingServiceOrDate": "Service ID or date is missing. Please select a valid date."
+    },
+    "termsAndConditions": {
+      "title": "Terms & Conditions",
+      "content1": "• Select any day and enjoy Free data for 24 hours.",
+      "content2": "• You can change the date as your requirement, one day prior to the selected date."
+    }
+    },
+    "broadbandPostPaidGetAddOns": {
+        "activateNow": "Activate Now →"
+      },
+    "broadbandPackageUpgrader": {
+        "currentPackage": "Current Package",
+        "monthlyPrice": "Rs. {{price}} + Tax (Per Month)",
+        "standard": "Standard",
+        "free": "Free",
+        "packagePrice": "Rs. {{price}} + Tax",
+        "perMonth": "(Per Month)",
+        "upgrade": "Upgrade"
+      },
+    "bill": {
+      "title": "Bill",
+      "tabs": {
+        "totalPayable": "Total Payable",
+        "billHistory": "Bill History",
+        "billMethods": "Bill Methods"
+      },
+    "no_privilege": "No privilege",
+    "no_permission": "You do not have permission to change the bill method",
+    "current_method": "Current Bill Method",
+    "edit": "Edit",
+    "other_methods": "Other Methods",
+    "get_via": "Get your bill via",
+    "agree_terms": "I agree to the terms and conditions",
+    "subscribe": "Subscribe"
+  },
+  "billDetails": {
+      "totalPayable": "Total Payable",
+      "lastPayment": "Last Payment",
+      "monthEnding": "For month ending at {{date}}",
+      "paymentOn": "On {{date}}",
+      "payNow": "Pay Now"
+},
+    "billhistory":{
+      "outstanding": "Outstanding",
+      "bill_value": "Bill Value",
+      "payments": "Payments",
+      "email_now": "Email Now",
+      "download_ebill": "Download eBill",
+      "close": "Close"
+
+    },
+  "complaints":{
+      "selectServiceLocation": "Please select your service location",
+      "serviceType": "Service Type",
+      "contactNumber": "Contact Number",
+      "complaintDescription": "Complaint Description",
+      "complaint": "COMPLAINTS",
+      "submitYourComplaint": "Submit Your Complaint",
+      "noFaultsFound": "No Faults Found",
+      "serviceName": "Service Name",
+      "faultRef": "Fault Ref",
+      "status": "Status",
+      "date": "Date"
+    },
+    "newServices": {
+    "title": "NEW SERVICES",
+    "subtitle": "SLT FIBER HOME LINE",
+    "tagline": "Live life better, happier and faster",
+    "requestNow": "Request Now",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "nic": "NIC",
+    "mobileNumber": "Mobile Number",
+    "submit": "Submit"
+  },
+  "auth": {
+    "login":{
+      "login_to": "Log in to your",
+      "myslt": "MySLT",
+      "mysltWelcomeMsg": "Welcome to the SLT Portal",
+      "loginPlaceholderEmail": "Enter your email or phone number",
+      "loginPlaceholderPassword": "Enter your password",
+      "forgot_password": "Forgot password",
+      "or": "OR",
+      "no_account": "Don't have an account",
+      "signups": "Signup",
+      "videoTitle": "Stay connected with ease. Download the SLT app today!"
+
+    },
+    "signup": {
+      "full_name": "Full Name",
+      "placeholderFull_name": "Enter your name",
+      "password": "Password",
+      "placeholderPassword": "Enter your password",
+      "email_or_phone_short": "Email / Phone number",
+      "confirm_password": "Confirm Password",
+      "placeholderConfirm_password": "Confirm your password",
+      "agree": "I agree to our",
+      "terms": "Terms of use",
+      "and": "and",
+      "privacy": "Privacy Policy",
+      "already_account": "Already got an account?",
+      "or_signin_with": "Or sign in with",
+      "login": "Login",
+      "create_an": "Create an",
+      "account": "account"
+    },
+    "contact_us": "CONTACT US",
+    "support": "SUPPORT",
+    "t&c": "Terms & Conditions",
+    "support2": "Support",
+    "customer_care": "Customer Care"
+  },
+  "profile": {
+    "my_profile": "MY PROFILE",
+    "enter_mobile": "Enter Your Mobile",
+    "name": "Name",
+    "update": "Update",
+    "manage_connection": "MANAGE CONNECTION",
+    "logout": "Logout"
+  },"dailyusage": {
+    "base": "Base Bundle",
+    "extra_gb": "Extra GB",
+    "loyalty": "Loyalty",
+    "vas": "VAS Bundles",
+    "date": "Date",
+    "total_usage": "Total Usage",
+    "usage": "Usage",
+    "report": "Report",
+    "view_detailed": "View Detailed Usage",
+    "view": "View",
+    "no_data_available": "No data available",
+    "no_data": "No data",
+    "inGB": "in GB"
+  },
+  "detailedusage": {
+    "detailed_usage": "DETAILED USAGE",
+    "total_usage": "Total Usage",
+    "pd": "PD - Peak Download",
+    "pu": "PU - Peak Upload",
+    "od": "OD - Off Peak Download",
+    "ou": "OU - Off Peak Upload"
+  },
+  "dreport": {
+    "unsubscribe_detailed": "Unsubscribe for detailed reports",
+    "unsubscribe_usage": "Unsubscribe to usage report",
+    "submit": "SUBMIT"
+  },
+  "changedetails": {
+    "update_info": "Update Contact Information",
+    "enter_mobile": "Enter your mobile number",
+    "enter_full_name": "Enter your full name",
+    "enter_email": "Enter your email address",
+    "email": "Email Address",
+    "full_name": "Full Name",
+    "mobile": "Mobile Number"
+    
+  },
+  "broadbanddetails": {
+    "mypackage": "My Package",
+    "extra_gb": "Extra GB",
+    "addons": "Add-ons",
+    "bonus_data": "Bonus Data",
+    "free_data": "Free Data"
+  },
+  "peoTv": {
+  "noPeoTvConnection": "No PEO TV Connection",
+  "noPeoTvConnectionMessage": "Seems like you don't have a PEO TV connection. Let's request one!",
+  "requestNow": "Request Now",
+  "noDataToShow": "No Data to Show",
+  "serviceId": "Service ID",
+  "status": "Status",
+  "vod": {
+    "no_VOD_title": "No Video On Demand Service",
+    "no_VOD_message": "You don't have a VOD service subscription. Subscribe now!",
+    "subscribe_now": "Subscribe Now",
+    "no_videos": "No Videos Available"
+  },
+  "peoTvGo": {
+      "stay_in_control":"STAY IN CONTROL",
+      "of_your_connection":"of your connection",
+      "with_the_new":"with the new & enhanced",
+      "explore": "Explore More"
+    }
+},
+  "prepaid":{
+    "precommon": {
+       "loading": "Loading..."
+  },
+    "dataUsage": {
+      "gbUsedOf": "{{used}} GB USED OF {{total}} GB",
+      "validTill": "Valid Till: {{date}}",
+      "noDataToShow": "No Data to Show"
+  },
+    "status": {
+      "active": "Active",
+      "inactive": "Inactive"
+  },
+    "buttons": {
+       "dataUsage": "Data Usage",
+       "getMainPackage": "Get Main Package",
+       "getDataAddOns": "Get Data Add-ons"
+  }
+ },
+ "homepage": {
+       "about-us": "About us",
+       "coverage-map": "Coverage Map",
+       "support": "Support",
+       "contact-us": "Contact Us",
+       "text-1": "Experience seamless communication and cutting-edge technology designed for your digital life.",
+       "text-2": "Effortless connectivity, limitless possibilities.",
+       "login": "Log in",
+       "signup": "Sign up",
+       "chatbot": "Hello! How can I help you today?"
+  },
+  "mobile": {
+    "stay_in_control": "STAY IN CONTROL",
+    "of_your_connection": "of your connection",
+    "with_the_all": "with the all-new & enhanced",
+    "more_info": "more info"
+  }
+}

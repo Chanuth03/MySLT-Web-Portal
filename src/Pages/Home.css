@@ -1,0 +1,149 @@
+/* Home.css */
+
+.home-container {
+  min-height: 100vh;
+  background-image: url("../../src/assets/bg-dashboard.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.nav-sidebar {
+  width: 240px;
+  background: #0f3b7a59;
+  height: 97vh;
+  position: sticky;
+  top: 10px;
+  bottom: 10px;
+  left: 0;
+  display: flex;
+  margin-left: 10px;
+  flex-direction: column;
+  border-radius: 20px;
+  overflow-y: hidden;
+  padding-top: 20px;
+}
+
+.main-content-dashboard {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.top-section {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.dynamic-content {
+  width: 100%;
+  flex-grow: 1;
+}
+
+.right-sidebar {
+  width: 300px;
+  background-color: #0f3b7a59;
+  height: 97vh;
+  position: sticky;
+  top: 10px;
+  bottom: 10px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  padding: 20px;
+  gap: 20px;
+  overflow-y: auto;
+}
+
+/* Hidden by default */
+.account-selector-mobile {
+  display: none;
+}
+.account-selector-desktop {
+  display: block;
+}
+.quick-access-mobile {
+  display: none;
+}
+
+/* 📱 Mobile View */
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 0;
+    background-color: #1a4b8c;
+  }
+
+  .main-content-dashboard {
+    width: 100%;
+    padding: 0 16px;
+    gap: 20px;
+    order: 1;
+  }
+
+  /* Navigation at bottom - horizontal */
+  .nav-sidebar {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    border-radius: 0;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 15px 10px;
+    position: static;
+    overflow-x: auto;
+    background-color: #0f3b7a;
+    order: 2;
+  }
+
+  /* Account selector section */
+  .account-selector-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    gap: 12px;
+    order: 1;
+  }
+
+  /* Quick access menu */
+  .quick-access-mobile {
+    display: block;
+    order: 2;
+  }
+
+  /* Banner section */
+  .quick-access-mobile .banner {
+    margin-top: 20px;
+    order: 3;
+  }
+
+  .top-section {
+    display: none;
+  }
+
+  .right-sidebar {
+    display: none;
+  }
+
+  .account-selector-desktop {
+    display: none;
+  }
+  .main-content-dashboard > * {
+    width: 100%;
+  }
+  .dynamic-content {
+    order: 4;
+  }
+}
