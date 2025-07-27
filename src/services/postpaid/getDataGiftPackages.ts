@@ -1,6 +1,9 @@
 import axios from "axios";
 
-const getDataGiftPackages = async (subscriberID: string, packageName: string): Promise<any | null> => {
+const getDataGiftPackages = async (
+  subscriberID: string,
+  packageName: string
+): Promise<any | null> => {
   try {
     const token = localStorage.getItem("accessToken"); // Retrieve the token from localStorage
     if (!token) {

@@ -5,6 +5,7 @@ import AccountSelector from "../components/AccountSelector";
 import CustomNavBar from "../components/CustomNavBar";
 import QuickAccessMenu from "../components/QuickAccessMenu";
 import useStore from "../services/useAppStore";
+import logoImg from "../assets/logo.png";
 import Mobile from "../components/Mobile/Mobile";
 import "./Home.css";
 
@@ -13,19 +14,21 @@ const Home = () => {
 
   return (
     <div className="home-container">
-      <div className="nav-sidebar">
+      <div className="nav-sidebar desktop-only">
         <CustomNavBar />
       </div>
-
-      {/* Main Content */}
       <div className="main-content-dashboard">
         <div className="account-selector-mobile">
+          <img src={logoImg} alt="Logo" className="mobile-logo" />
           <AccountSelector />
         </div>
-
         <div className="quick-access-mobile">
           <QuickAccessMenu />
           <Banner />
+          <AccountBalance />
+          <div className="custom-navbar-mobile">
+            <CustomNavBar />
+          </div>
         </div>
         <div className="top-section">
           <AccountBalance />
