@@ -77,8 +77,24 @@
 .mobile-header-row {
   display: none;
 }
+.mobile-custom-navbar {
+  display: none;
+}
+.mobile-account-balance-box {
+  display: none;
+}
 
 @media (max-width: 768px) {
+  .mobile-main-box {
+    background-color: rgba(15, 59, 122, 0.35);
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
   .mobile-logo-container {
     display: flex;
     justify-content: flex-start;
@@ -156,5 +172,14 @@
   }
   .desktop-only {
     display: none;
+  }
+
+  .mobile-account-balance-box {
+    display: block;
+  }
+
+  .mobile-custom-navbar {
+    display: block;
+    margin-top: 10px;
   }
 }

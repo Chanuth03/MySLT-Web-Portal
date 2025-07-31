@@ -1,26 +1,32 @@
-import { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom'; // ✅ We need this to navigate
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom"; // ✅ We need this to navigate
 import { userLogin } from "../../services/Auth";
 import useStore from "../../services/useAppStore";
 import registerUser from "../../services/register/register";
 import { OtpGlobalState, OtpResponse } from "../../types/types";
 import RegisterOTP from "../Auth/RegisterOTP"; // ✅ Make sure this path is correct
-import { useTranslation } from 'react-i18next';
-import './LoginForm.css';
+import { useTranslation } from "react-i18next";
+import "./LoginForm.css";
 
 interface LoginFormProps {
-  defaultTab?: 'login' | 'signup';
+  defaultTab?: "login" | "signup";
   onSelectTab?: (tabName: string) => void;
 }
 
-const LoginForm: React.FC<LoginFormProps> = ({ defaultTab = 'login', onSelectTab }) => {
+const LoginForm: React.FC<LoginFormProps> = ({
+  defaultTab = "login",
+  onSelectTab,
+}) => {
   const navigate = useNavigate(); // ✅ Navigation hook to redirect after login
-  const [fullName, setFullName] = useState<string>('');
-  const [confirmPassword, setConfirmPassword] = useState<string>('');
+  const [fullName, setFullName] = useState<string>("");
+  const [confirmPassword, setConfirmPassword] = useState<string>("");
   const [showPassword, setShowPassword] = useState<boolean>(false);
-  const [showConfirmPassword, setShowConfirmPassword] = useState<boolean>(false);
+  const [showConfirmPassword, setShowConfirmPassword] =
+    useState<boolean>(false);
   const [agreeToTerms, setAgreeToTerms] = useState<boolean>(false);
-  const [activeTab, setActiveTab] = useState<'login' | 'signup' | 'registerotp'>(defaultTab);
+  const [activeTab, setActiveTab] = useState<
+    "login" | "signup" | "registerotp"
+  >(defaultTab);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [successMessage, setSuccessMessage] = useState<string | null>(null);
   const [email, setEmail] = useState("");
@@ -94,14 +100,14 @@ const LoginForm: React.FC<LoginFormProps> = ({ defaultTab = 'login', onSelectTab
         setSuccessMessage("Account successfully created! Redirecting...");
         setTimeout(() => {
           if (onSelectTab) {
-            onSelectTab('registerotp');
+            onSelectTab("registerotp");
           } else {
-            setActiveTab('registerotp'); // ✅ Show OTP component
+            setActiveTab("registerotp"); // ✅ Show OTP component
           }
-          setFullName('');
-          setEmail('');
-          setPassword('');
-          setConfirmPassword('');
+          setFullName("");
+          setEmail("");
+          setPassword("");
+          setConfirmPassword("");
           setAgreeToTerms(false);
         }, 2000);
       } else {
@@ -116,17 +122,21 @@ const LoginForm: React.FC<LoginFormProps> = ({ defaultTab = 'login', onSelectTab
 
   const handleForgotPassword = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
-    navigate('/forgotpassword');
+    navigate("/forgotpassword");
   };
 
-  const changeTab = (tab: 'login' | 'signup') => {
+  const changeTab = (tab: "login" | "signup") => {
     setActiveTab(tab);
     navigate(`/${tab}`);
   };
 
   const handleOtpSelectTab = (tabName: string) => {
-    if (tabName === 'login' || tabName === 'signup' || tabName === 'registerotp') {
-      setActiveTab(tabName as 'login' | 'signup' | 'registerotp');
+    if (
+      tabName === "login" ||
+      tabName === "signup" ||
+      tabName === "registerotp"
+    ) {
+      setActiveTab(tabName as "login" | "signup" | "registerotp");
     }
     if (onSelectTab) {
       onSelectTab(tabName);
@@ -136,64 +146,103 @@ const LoginForm: React.FC<LoginFormProps> = ({ defaultTab = 'login', onSelectTab
   return (
     <div className="login-container">
       <div className="login-form-wrapper">
-        {activeTab !== 'registerotp' ? (
+        {activeTab !== "registerotp" ? (
           <>
             <div className="login-tabs">
-              <button className={`tab ${activeTab === 'login' ? 'active' : ''}`} onClick={() => changeTab('login')}>
-                {t('homepage.login')}
+              <button
+                className={`tab ${activeTab === "login" ? "active" : ""}`}
+                onClick={() => changeTab("login")}
+              >
+                {t("homepage.login")}
               </button>
-              <button className={`tab ${activeTab === 'signup' ? 'active' : ''}`} onClick={() => changeTab('signup')}>
-                {t('homepage.signup')}
+              <button
+                className={`tab ${activeTab === "signup" ? "active" : ""}`}
+                onClick={() => changeTab("signup")}
+              >
+                {t("homepage.signup")}
               </button>
             </div>
 
-            {activeTab === 'login' ? (
+            {activeTab === "login" ? (
               <>
-                <h1 className="login-title">{t('auth.login.login_to')} <span className="highlight">{t('auth.login.myslt')}</span></h1>
-                <p className="login-subtitle">{t('auth.login.mysltWelcomeMsg')}</p>
+                <h1 className="login-title">
+                  {t("auth.login.login_to")}{" "}
+                  <span className="highlight">{t("auth.login.myslt")}</span>
+                </h1>
+                <p className="login-subtitle">
+                  {t("auth.login.mysltWelcomeMsg")}
+                </p>
 
                 <form onSubmit={handleSubmit} className="login-form">
-                  {successMessage && <div className="success-message">{successMessage}</div>}
-                  {errorMessage && <div className="error-message">{errorMessage}</div>}
+                  {successMessage && (
+                    <div className="success-message">{successMessage}</div>
+                  )}
+                  {errorMessage && (
+                    <div className="error-message">{errorMessage}</div>
+                  )}
 
                   <div className="form-group">
-                    <label htmlFor="login-email">{t('auth.signup.email_or_phone_short')}</label>
+                    <label htmlFor="login-email">
+                      {t("auth.signup.email_or_phone_short")}
+                    </label>
                     <input
                       type="text"
                       id="login-email"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
-                      placeholder={t('auth.login.loginPlaceholderEmail')}
+                      placeholder={t("auth.login.loginPlaceholderEmail")}
                       required
                     />
                   </div>
 
                   <div className="form-group">
-                    <label htmlFor="login-password">{t('auth.signup.password')}</label>
+                    <label htmlFor="login-password">
+                      {t("auth.signup.password")}
+                    </label>
                     <div className="password-input">
                       <input
                         type={showPassword ? "text" : "password"}
                         id="login-password"
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
-                        placeholder={t('auth.login.loginPlaceholderPassword')}
+                        placeholder={t("auth.login.loginPlaceholderPassword")}
                         required
                       />
-                      <button type="button" className="toggle-password" onClick={() => setShowPassword(!showPassword)}>
-                        {showPassword ? <i className="fas fa-eye-slash"></i> : <i className="fas fa-eye"></i>}
+                      <button
+                        type="button"
+                        className="toggle-password"
+                        onClick={() => setShowPassword(!showPassword)}
+                      >
+                        {showPassword ? (
+                          <i className="fas fa-eye-slash"></i>
+                        ) : (
+                          <i className="fas fa-eye"></i>
+                        )}
                       </button>
                     </div>
                   </div>
 
                   <div className="forgot-password">
-                    <a href="#" onClick={handleForgotPassword}>{t('auth.login.forgot_password')}?</a>
+                    <a href="#" onClick={handleForgotPassword}>
+                      {t("auth.login.forgot_password")}?
+                    </a>
                   </div>
 
-                  <button type="submit" className="login-button active" disabled={loading}>
-                    {loading ? <i className="fas fa-spinner fa-spin"></i> : t('auth.signup.login')}
+                  <button
+                    type="submit"
+                    className="login-button active"
+                    disabled={loading}
+                  >
+                    {loading ? (
+                      <i className="fas fa-spinner fa-spin"></i>
+                    ) : (
+                      t("auth.signup.login")
+                    )}
                   </button>
 
-                  <div className="divider"><span>{t('auth.login.or')}</span></div>
+                  <div className="divider">
+                    <span>{t("auth.login.or")}</span>
+                  </div>
 
                   <div className="social-login">
                     <button type="button" className="social-button google">
@@ -208,77 +257,121 @@ const LoginForm: React.FC<LoginFormProps> = ({ defaultTab = 'login', onSelectTab
                   </div>
 
                   <div className="no-account">
-                    {t('auth.login.no_account')}? <a href="#" onClick={(e) => { e.preventDefault(); changeTab('signup'); }}>{t('auth.login.signups')}</a>
+                    {t("auth.login.no_account")}?{" "}
+                    <a
+                      href="#"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        changeTab("signup");
+                      }}
+                    >
+                      {t("auth.login.signups")}
+                    </a>
                   </div>
 
                   <div className="terms-links">
-                    <a href="#">{t('auth.t&c')}</a>
-                    <a href="#">{t('auth.support2')}</a>
-                    <a href="#">{t('auth.customer_care')}</a>
+                    <a href="#">{t("auth.t&c")}</a>
+                    <a href="#">{t("auth.support2")}</a>
+                    <a href="#">{t("auth.customer_care")}</a>
                   </div>
                 </form>
               </>
             ) : (
               <>
-                <h1 className="login-title">{t('auth.signup.create_an')} <span className="highlight">{t('auth.signup.account')}</span></h1>
-                {errorMessage && <div className="error-message">{errorMessage}</div>}
-                {successMessage && <div className="success-message">{successMessage}</div>}
+                <h1 className="login-title">
+                  {t("auth.signup.create_an")}{" "}
+                  <span className="highlight">{t("auth.signup.account")}</span>
+                </h1>
+                {errorMessage && (
+                  <div className="error-message">{errorMessage}</div>
+                )}
+                {successMessage && (
+                  <div className="success-message">{successMessage}</div>
+                )}
 
                 <form onSubmit={handleSignupSubmit} className="login-form">
                   <div className="form-group">
-                    <label htmlFor="fullName">{t('auth.signup.full_name')}</label>
+                    <label htmlFor="fullName">
+                      {t("auth.signup.full_name")}
+                    </label>
                     <input
                       type="text"
                       id="fullName"
                       value={fullName}
                       onChange={(e) => setFullName(e.target.value)}
-                      placeholder={t('auth.signup.placeholderFull_name')}
+                      placeholder={t("auth.signup.placeholderFull_name")}
                       required
                     />
                   </div>
 
                   <div className="form-group">
-                    <label htmlFor="signup-email">{t('auth.signup.email_or_phone_short')}</label>
+                    <label htmlFor="signup-email">
+                      {t("auth.signup.email_or_phone_short")}
+                    </label>
                     <input
                       type="text"
                       id="signup-email"
                       value={email}
                       onChange={(e) => setEmail(e.target.value.trim())}
-                      placeholder={t('auth.login.loginPlaceholderEmail')}
+                      placeholder={t("auth.login.loginPlaceholderEmail")}
                       required
                     />
                   </div>
 
                   <div className="form-group">
-                    <label htmlFor="signup-password">{t('auth.signup.password')}</label>
+                    <label htmlFor="signup-password">
+                      {t("auth.signup.password")}
+                    </label>
                     <div className="password-input">
                       <input
                         type={showPassword ? "text" : "password"}
                         id="signup-password"
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
-                        placeholder={t('auth.signup.placeholderPassword')}
+                        placeholder={t("auth.signup.placeholderPassword")}
                         required
                       />
-                      <button type="button" className="toggle-password" onClick={() => setShowPassword(!showPassword)}>
-                        {showPassword ? <i className="fas fa-eye-slash"></i> : <i className="fas fa-eye"></i>}
+                      <button
+                        type="button"
+                        className="toggle-password"
+                        onClick={() => setShowPassword(!showPassword)}
+                      >
+                        {showPassword ? (
+                          <i className="fas fa-eye-slash"></i>
+                        ) : (
+                          <i className="fas fa-eye"></i>
+                        )}
                       </button>
                     </div>
                   </div>
 
                   <div className="form-group">
-                    <label htmlFor="confirm-password">{t('auth.signup.confirm_password')}</label>
+                    <label htmlFor="confirm-password">
+                      {t("auth.signup.confirm_password")}
+                    </label>
                     <div className="password-input">
                       <input
                         type={showConfirmPassword ? "text" : "password"}
                         id="confirm-password"
                         value={confirmPassword}
                         onChange={(e) => setConfirmPassword(e.target.value)}
-                        placeholder={t('auth.signup.placeholderConfirm_password')}
+                        placeholder={t(
+                          "auth.signup.placeholderConfirm_password"
+                        )}
                         required
                       />
-                      <button type="button" className="toggle-password" onClick={() => setShowConfirmPassword(!showConfirmPassword)}>
-                        {showConfirmPassword ? <i className="fas fa-eye-slash"></i> : <i className="fas fa-eye"></i>}
+                      <button
+                        type="button"
+                        className="toggle-password"
+                        onClick={() =>
+                          setShowConfirmPassword(!showConfirmPassword)
+                        }
+                      >
+                        {showConfirmPassword ? (
+                          <i className="fas fa-eye-slash"></i>
+                        ) : (
+                          <i className="fas fa-eye"></i>
+                        )}
                       </button>
                     </div>
                   </div>
@@ -293,24 +386,42 @@ const LoginForm: React.FC<LoginFormProps> = ({ defaultTab = 'login', onSelectTab
                       />
                       <span className="checkmark"></span>
                       <span className="terms-text">
-                        {t('auth.signup.agree')} <a href="#">{t('auth.signup.terms')}</a> {t('common.and')} <a href="#">{t('auth.signup.privacy')}</a>
+                        {t("auth.signup.agree")}{" "}
+                        <a href="#">{t("auth.signup.terms")}</a>{" "}
+                        {t("common.and")}{" "}
+                        <a href="#">{t("auth.signup.privacy")}</a>
                       </span>
                     </label>
                   </div>
 
                   <button
                     type="submit"
-                    className={`login-button ${agreeToTerms ? 'active' : ''}`}
+                    className={`login-button ${agreeToTerms ? "active" : ""}`}
                     disabled={!agreeToTerms || loading}
                   >
-                    {loading ? <i className="fas fa-spinner fa-spin"></i> : t('auth.login.signups')}
+                    {loading ? (
+                      <i className="fas fa-spinner fa-spin"></i>
+                    ) : (
+                      t("auth.login.signups")
+                    )}
                   </button>
 
                   <div className="already-account">
-                    {t('auth.signup.already_account')} <a href="#" onClick={(e) => { e.preventDefault(); changeTab('login'); }}>{t('auth.signup.login')}</a>
+                    {t("auth.signup.already_account")}{" "}
+                    <a
+                      href="#"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        changeTab("login");
+                      }}
+                    >
+                      {t("auth.signup.login")}
+                    </a>
                   </div>
 
-                  <div className="divider"><span>{t('auth.signup.or_signin_with')}</span></div>
+                  <div className="divider">
+                    <span>{t("auth.signup.or_signin_with")}</span>
+                  </div>
 
                   <div className="social-login">
                     <button type="button" className="social-button google">

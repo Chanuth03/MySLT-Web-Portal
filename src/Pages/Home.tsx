@@ -17,22 +17,30 @@ const Home = () => {
       <div className="nav-sidebar desktop-only">
         <CustomNavBar />
       </div>
+
       <div className="main-content-dashboard">
-        <div className="account-selector-mobile">
-          <img src={logoImg} alt="Logo" className="mobile-logo" />
-          <AccountSelector />
-        </div>
-        <div className="quick-access-mobile">
-          <QuickAccessMenu />
-          <Banner />
-          <AccountBalance />
-          <div className="custom-navbar-mobile">
-            <CustomNavBar />
+        <div className="mobile-main-box">
+          <div className="account-selector-mobile">
+            <img src={logoImg} alt="Logo" className="mobile-logo" />
+            <AccountSelector />
+          </div>
+          <div className="quick-access-mobile">
+            <QuickAccessMenu />
+            <Banner />
           </div>
         </div>
+
+        <div className="mobile-account-balance-box">
+          <AccountBalance />
+        </div>
+        <div className="mobile-custom-navbar">
+          <CustomNavBar />
+        </div>
+
         <div className="top-section">
           <AccountBalance />
         </div>
+
         <div className="dynamic-content">
           {selectedNavbarItem === "" && <ContentSection />}
           {selectedNavbarItem === "Broadband" && <ContentSection />}
@@ -41,6 +49,7 @@ const Home = () => {
           {selectedNavbarItem === "Mobile" && <Mobile />}
         </div>
       </div>
+
       <div className="right-sidebar">
         <div className="account-selector-desktop">
           <AccountSelector />
