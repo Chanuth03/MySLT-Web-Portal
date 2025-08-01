@@ -13,11 +13,10 @@ const AccountSelector = () => {
   const [_openDropdown, setOpenDropdown] = useState(false); // Dropdown open/close state
   const [accounts, setAccounts] = useState<AccountDetails[]>([
     {
-      telephoneno: "0332245971",
-      // accountNo: undefined,
+      telephoneno: "0714329988",
       accountno: "",
       status: "",
-    }, // Hardcoded phone number
+    },
   ]);
 
   const [menuOpen, setMenuOpen] = useState(false);
@@ -44,13 +43,24 @@ const AccountSelector = () => {
   useEffect(() => {
     const fetchData = async () => {
       const accountData = await fetchAccountDetails();
+
       if (accountData && accountData.length > 0) {
-        setAccounts(accountData);
-        setSelectedTelephone(accountData[0].telephoneno);
-        setAccount(accountData[0].telephoneno);
-        fetchServiceDetails(accountData[0].telephoneno);
+        const mergedAccounts = [
+          {
+            telephoneno: "0714329988",
+            accountno: "",
+            status: "",
+          },
+          ...accountData,
+        ];
+
+        setAccounts(mergedAccounts);
+        setSelectedTelephone(mergedAccounts[0].telephoneno);
+        setAccount(mergedAccounts[0].telephoneno);
+        fetchServiceDetails(mergedAccounts[0].telephoneno);
       }
     };
+
     fetchData();
   }, []);
 

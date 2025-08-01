@@ -24,6 +24,7 @@
   transition: all 0.2s;
   color: rgba(255, 255, 255, 0.7);
   margin-bottom: 5px;
+  border-radius: 8px;
 }
 
 .service-item:hover {
@@ -58,6 +59,18 @@
   color: #ffffff;
 }
 
+/* --- Disabled State Styling --- */
+.service-item.disabled {
+  pointer-events: none;
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.service-item.disabled:hover {
+  background-color: transparent;
+}
+
+/* --- Responsive Styles --- */
 @media (max-width: 992px) {
   .sidebar {
     width: 100%;
@@ -81,6 +94,7 @@
   .logo-container-dashboard {
     display: none;
   }
+
   .service-icon {
     margin-right: 0;
     margin-bottom: 5px;

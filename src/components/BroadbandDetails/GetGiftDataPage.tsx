@@ -1,4 +1,13 @@
-import { Box, Button, Checkbox, Dialog, DialogActions, DialogContent, DialogTitle, Typography } from "@mui/material";
+import {
+  Box,
+  Button,
+  Checkbox,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogTitle,
+  Typography,
+} from "@mui/material";
 import React, { useEffect, useState } from "react";
 
 // Replace with your image paths
@@ -9,7 +18,6 @@ import WatermarkLogo from "../../assets/watermarklogo.png";
 import enrollDataGift from "../../services/postpaid/enrollDataGift";
 import getDataGiftPackages from "../../services/postpaid/getDataGiftPackages";
 import useStore from "../../services/useAppStore";
-
 
 const GetGiftDataPage: React.FC = () => {
   const { serviceDetails, giftDataMobileNumber } = useStore();
@@ -47,9 +55,10 @@ const GetGiftDataPage: React.FC = () => {
     console.log("Gift Mobile Number from Store:", giftDataMobileNumber);
   }, [giftDataMobileNumber]); // Trigger whenever giftDataMobileNumber changes
 
-
   const handleSelect = (gb: number) => {
-    const selectedPlan = apiData?.dataBundle.find((plan: any) => plan.volume === gb);
+    const selectedPlan = apiData?.dataBundle.find(
+      (plan: any) => plan.volume === gb
+    );
     if (selectedPlan) {
       setSelectedGB(gb);
       setSelectedPrice(parseFloat(selectedPlan.postPrice));
@@ -71,30 +80,35 @@ const GetGiftDataPage: React.FC = () => {
 
   const handleSubmit = async () => {
     if (addToBillSelected && selectedGB && selectedPrice) {
-      const packageId = apiData?.dataBundle.find((plan: any) => plan.volume === selectedGB)?.packageId;
-  
+      const packageId = apiData?.dataBundle.find(
+        (plan: any) => plan.volume === selectedGB
+      )?.packageId;
+
       if (packageId && serviceID) {
         // Ensure giftDataMobileNumber is not null, default to an empty string if it is
-        const mobileNumber = giftDataMobileNumber || ''; // Handle null by providing a default empty string
-  
+        const mobileNumber = giftDataMobileNumber || ""; // Handle null by providing a default empty string
+
         // Pass the serviceID and mobileNumber to the enrollDataGift API call
-        const response = await enrollDataGift(mobileNumber, serviceID, packageId, "SCP");
-        
+        const response = await enrollDataGift(
+          mobileNumber,
+          serviceID,
+          packageId,
+          "SCP"
+        );
+
         // Check the response and set dialog message accordingly
         if (response && response.isSuccess) {
           setDialogMessage(response.dataBundle?.message ?? "Success"); // Fallback to "Success" if message is null or undefined
         } else {
           setDialogMessage("Error in enrolling the gift package.");
         }
-  
+
         // Open the dialog with the message
-        setOpenDialog(true); 
+        setOpenDialog(true);
       }
     }
   };
-  
-  
-  
+
   return (
     <Box
       sx={{
@@ -168,7 +182,8 @@ const GetGiftDataPage: React.FC = () => {
               key={plan.volume}
               variant={selectedGB === plan.volume ? "contained" : "outlined"}
               sx={{
-                backgroundColor: selectedGB === plan.volume ? "#0056A2" : "white",
+                backgroundColor:
+                  selectedGB === plan.volume ? "#0056A2" : "white",
                 color: selectedGB === plan.volume ? "white" : "#0056A2",
                 fontSize: "15px",
                 height: "60px",
@@ -324,41 +339,38 @@ const GetGiftDataPage: React.FC = () => {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-            
             }}
           >
-          <Button
-  variant="contained"
-  sx={{
-    backgroundColor: "white",
-    border: "2px solid #0056A2",
-    color: "#0056A2",
-    textTransform: "none",
-    fontSize: "16px",
-    padding: "6px 30px",
-    borderRadius: "10px",
-    "&:hover": { backgroundColor: "#f0f0f0" },
-  }}
-  disabled={!isChecked} // disable button if checkbox is not checked
-  onClick={handleSubmit} // correctly placed onClick
->
-  Submit
-</Button>
-
+            <Button
+              variant="contained"
+              sx={{
+                backgroundColor: "white",
+                border: "2px solid #0056A2",
+                color: "#0056A2",
+                textTransform: "none",
+                fontSize: "16px",
+                padding: "6px 30px",
+                borderRadius: "10px",
+                "&:hover": { backgroundColor: "#f0f0f0" },
+              }}
+              disabled={!isChecked} // disable button if checkbox is not checked
+              onClick={handleSubmit} // correctly placed onClick
+            >
+              Submit
+            </Button>
           </Box>
-          
         </Box>
 
-          {/* Dialog */}
-      <Dialog open={openDialog} onClose={() => setOpenDialog(false)}>
-        <DialogTitle>Enrollment Status</DialogTitle>
-        <DialogContent>{dialogMessage}</DialogContent>
-        <DialogActions>
-          <Button onClick={() => setOpenDialog(false)} color="primary">
-            Close
-          </Button>
-        </DialogActions>
-      </Dialog>
+        {/* Dialog */}
+        <Dialog open={openDialog} onClose={() => setOpenDialog(false)}>
+          <DialogTitle>Enrollment Status</DialogTitle>
+          <DialogContent>{dialogMessage}</DialogContent>
+          <DialogActions>
+            <Button onClick={() => setOpenDialog(false)} color="primary">
+              Close
+            </Button>
+          </DialogActions>
+        </Dialog>
 
         <Box sx={{ position: "absolute", right: "2%", bottom: "1%" }}>
           <img

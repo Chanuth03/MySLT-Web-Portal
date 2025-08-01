@@ -3,6 +3,8 @@ import Banner from "../components/Banner";
 import ContentSection from "../components/ContentSection";
 import AccountSelector from "../components/AccountSelector";
 import CustomNavBar from "../components/CustomNavBar";
+import MobitelQuickAccessMenu from "../components/MobitelComponents/QuickAccessMenu";
+import MobitelBanner from "../components/MobitelComponents/Banner";
 import QuickAccessMenu from "../components/QuickAccessMenu";
 import useStore from "../services/useAppStore";
 import logoImg from "../assets/logo.png";
@@ -10,7 +12,9 @@ import Mobile from "../components/Mobile/Mobile";
 import "./Home.css";
 
 const Home = () => {
-  const { selectedNavbarItem } = useStore();
+  const { selectedNavbarItem, selectedTelephone } = useStore();
+
+  const isMobitel = selectedTelephone === "0714329988";
 
   return (
     <div className="home-container">
@@ -25,8 +29,8 @@ const Home = () => {
             <AccountSelector />
           </div>
           <div className="quick-access-mobile">
-            <QuickAccessMenu />
-            <Banner />
+            {isMobitel ? <MobitelQuickAccessMenu /> : <QuickAccessMenu />}
+            {isMobitel ? <MobitelBanner /> : <Banner />}
           </div>
         </div>
 
@@ -54,8 +58,8 @@ const Home = () => {
         <div className="account-selector-desktop">
           <AccountSelector />
         </div>
-        <QuickAccessMenu />
-        <Banner />
+        {isMobitel ? <MobitelQuickAccessMenu /> : <QuickAccessMenu />}
+        {isMobitel ? <MobitelBanner /> : <Banner />}
       </div>
     </div>
   );

@@ -62,14 +62,24 @@
   padding: 20px;
   gap: 20px;
   overflow-y: auto;
+
+  /* Hide scrollbar */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.right-sidebar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
 }
 
 .account-selector-mobile {
   display: none;
 }
+
 .account-selector-desktop {
   display: block;
 }
+
 .quick-access-mobile {
   display: none;
 }
@@ -77,13 +87,16 @@
 .mobile-header-row {
   display: none;
 }
+
 .mobile-custom-navbar {
   display: none;
 }
+
 .mobile-account-balance-box {
   display: none;
 }
 
+/* Mobile Styles */
 @media (max-width: 768px) {
   .mobile-main-box {
     background-color: rgba(15, 59, 122, 0.35);
@@ -95,6 +108,7 @@
     flex-direction: column;
     gap: 10px;
   }
+
   .mobile-logo-container {
     display: flex;
     justify-content: flex-start;
@@ -121,6 +135,7 @@
     gap: 20px;
     order: 1;
   }
+
   .nav-sidebar {
     width: 100%;
     height: auto;
@@ -133,7 +148,16 @@
     overflow-x: auto;
     background-color: #0f3b7a;
     order: 2;
+
+    /* Hide horizontal scrollbar in mobile */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
   }
+
+  .nav-sidebar::-webkit-scrollbar {
+    display: none;
+  }
+
   .account-selector-mobile {
     display: flex;
     justify-content: center;
@@ -164,12 +188,15 @@
   .account-selector-desktop {
     display: none;
   }
+
   .main-content-dashboard > * {
     width: 100%;
   }
+
   .dynamic-content {
     order: 4;
   }
+
   .desktop-only {
     display: none;
   }
