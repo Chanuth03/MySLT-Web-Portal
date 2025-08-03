@@ -1,0 +1,139 @@
+.voice-container {
+    background-color: #172554; /* blue-950 */
+    padding: 1rem;
+    border-radius: 10px;
+    max-width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .voice-content {
+    padding: 1rem;
+  }
+  
+  .voice-header {
+    /* display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #0F3B7A;
+    border-radius: 10px;
+    padding: 0.3rem;
+    margin-bottom: 2rem;
+  }
+  
+  .voice-icon-container {
+    
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  
+  .voice-icon {
+    color: #bfdbfe; /* text-blue-200 */
+    width: 24px;
+    height: 24px;
+  }
+  
+  .voice-title {
+    color: white;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  
+  .voice-timestamp {
+    color: #9ca3af; /* text-gray-400 */
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+  }
+  
+  .voice-bundle-container {
+    background-color: #1e3a8a; /* blue-900 */
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    height: 180px; 
+  }
+  
+  .voice-bundle-title {
+    color: white;
+    font-weight: 700;
+    font-size: 1.125rem;
+    margin-top: -10px;
+  }
+  
+  .voice-bundle-label {
+    color: white;
+    margin-bottom: 0.2rem;
+  }
+  
+  .voice-progress-container {
+    height: 1rem;
+    background-color: #4b5563; /* bg-gray-600 */
+    border-radius: 9999px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+  }
+  
+  .voice-progress-bar {
+    height: 100%;
+    background-color: #10b981; /* bg-green-500 */
+    border-radius: 9999px;
+  }
+  
+  .voice-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+  }
+  
+  .voice-used {
+    color: #d1d5db; /* text-gray-300 */
+    font-size: 0.875rem;
+  }
+  
+  .voice-remaining-container {
+    text-align: right;
+  }
+  
+  .voice-remaining-value {
+    color: white;
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-top: -7px;
+  }
+  
+  .voice-remaining-label {
+    color: #d1d5db; /* text-gray-300 */
+    font-size: 0.875rem;
+  }
+  
+  .voice-expiry {
+    color: #d1d5db; /* text-gray-300 */
+    font-size: 0.875rem;
+    text-align: right;
+    margin-top: -10px;
+  }
+  
+  .voice-button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+  }
+  
+  .voice-button {
+    border: 1px solid white;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 9999px;
+    background-color: transparent;
+    transition: background-color 0.3s;
+    cursor: pointer;
+  }
+  
+  .voice-button:hover {
+    background-color: #1e40af; /* hover:bg-blue-800 */
+  }

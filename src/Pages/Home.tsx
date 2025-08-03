@@ -8,7 +8,7 @@ import MobitelBanner from "../components/MobitelComponents/Banner";
 import QuickAccessMenu from "../components/QuickAccessMenu";
 import useStore from "../services/useAppStore";
 import logoImg from "../assets/logo.png";
-import Mobile from "../components/Mobile/Mobile";
+import Mobile from "../components/MobitelComponents/MobitelInterface";
 import "./Home.css";
 
 const Home = () => {
@@ -41,9 +41,7 @@ const Home = () => {
           <CustomNavBar />
         </div>
 
-        <div className="top-section">
-          <AccountBalance />
-        </div>
+        <div className="top-section">{isMobitel ? "" : <AccountBalance />}</div>
 
         <div className="dynamic-content">
           {selectedNavbarItem === "" && <ContentSection />}

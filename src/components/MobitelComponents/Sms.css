@@ -1,0 +1,136 @@
+.sms-container {
+    background-color: #172554; /* blue-950 */
+    padding: 1rem;
+    border-radius: 10px;
+    max-width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .sms-content {
+    padding: 1rem;
+  }
+  
+  .sms-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #0F3B7A;
+    border-radius: 10px;
+    padding: 0.3rem;
+    margin-bottom: 2rem;
+  }
+  
+  .sms-icon-container {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  
+  .sms-icon {
+    color: #bfdbfe; /* text-blue-200 */
+    width: 24px;
+    height: 24px;
+  }
+  
+  .sms-title {
+    color: white;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  
+  .sms-timestamp {
+    color: #9ca3af; /* text-gray-400 */
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+  }
+  
+  .sms-bundle-container {
+    background-color: #1e3a8a; /* blue-900 */
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    height: 180px;
+  }
+  
+  .sms-bundle-title {
+    color: white;
+    font-weight: 700;
+    font-size: 1.125rem;
+    margin-top: -10px;
+  }
+  
+  .sms-bundle-label {
+    color: white;
+    margin-bottom: 0.2rem;
+  }
+  
+  .sms-progress-container {
+    height: 1rem;
+    background-color: #4b5563; /* bg-gray-600 */
+    border-radius: 9999px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+  }
+  
+  .sms-progress-bar {
+    height: 100%;
+    background-color: #10b981; /* bg-green-500 */
+    border-radius: 9999px;
+  }
+  
+  .sms-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+  }
+  
+  .sms-used {
+    color: #d1d5db; /* text-gray-300 */
+    font-size: 0.875rem;
+  }
+  
+  .sms-remaining-container {
+    text-align: right;
+  }
+  
+  .sms-remaining-value {
+    color: white;
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-top: -7px;
+  }
+  
+  .sms-remaining-label {
+    color: #d1d5db; /* text-gray-300 */
+    font-size: 0.875rem;
+  }
+  
+  .sms-expiry {
+    color: #d1d5db; /* text-gray-300 */
+    font-size: 0.875rem;
+    text-align: right;
+    margin-top: -10px;
+  }
+  
+  .sms-button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+  }
+  
+  .sms-button {
+    border: 1px solid white;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 9999px;
+    background-color: transparent;
+    transition: background-color 0.3s;
+    cursor: pointer;
+  }
+  
+  .sms-button:hover {
+    background-color: #1e40af; /* hover:bg-blue-800 */
+  }
+  

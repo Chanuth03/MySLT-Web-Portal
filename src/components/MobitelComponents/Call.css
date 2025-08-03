@@ -1,0 +1,82 @@
+.call-container {
+    background-color: #172554; /* blue-950 */
+    padding: 1rem;
+    border-radius: 10px;
+    max-width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    font-family: "Poppins", sans-serif;
+    }
+    .call-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #0F3B7A;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    }
+    .phone-icon {
+    color: white;
+    }
+    .call-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+    }
+    .update-info {
+    color: #cbd5e1;
+    margin-bottom: 24px;
+    }
+    .bundle-card {
+    background-color: #1e3a8a;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    
+
+    }
+    .bundle-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 16px;
+    margin-top: 0;
+    }
+    .bundle-label {
+    color: white;
+    margin-bottom: 16px;
+    }
+    .progress-bar-container {
+    position: relative;
+    height: 16px;
+    background-color: #4b5563;
+    border-radius: 9999px;
+    margin-bottom: 8px;
+    }
+    .progress-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #22c55e;
+    border-radius: 9999px;
+    }
+    .usage-info {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin-bottom: 4px;
+    }
+    .remaining-container {
+    display: flex;
+    align-items: center;
+    }
+    .remaining-number {
+    margin-right: 8px;
+    }
+    .expiry-info {
+    text-align: right;
+    color: #cbd5e1;
+    }

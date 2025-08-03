@@ -1,0 +1,157 @@
+/* MobitelInterface.css */
+.mobitel-container {
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+  
+  .top-nav {
+    padding: 0.5rem;
+    font-size: 0.875rem;
+    color: #9ca3af;
+  }
+  
+  .main-content {
+    display: flex;
+    flex: 1;
+  }
+  
+  .left-sidebar {
+    width: 12rem;
+    background-color: #0c2557;
+    padding: 1rem;
+  }
+  
+  .brand {
+    margin-bottom: 2rem;
+  }
+  
+  .slt-text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .slt-slash {
+    color: #4ade80;
+    font-weight: bold;
+    margin-right: 0.25rem;
+  }
+  
+  .slt-name {
+    color: #4ade80;
+    font-weight: bold;
+  }
+  
+  .mobitel-name {
+    color: #22c55e;
+    font-weight: bold;
+  }
+  
+  .tagline {
+    font-size: 0.75rem;
+    color: #9ca3af;
+  }
+  
+  .sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .menu-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .active-menu {
+    color: #93c5fd;
+  }
+  
+  .main-area {
+    flex: 1;
+    padding: 1rem;
+  }
+  
+  .grid-layout {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+  }
+  
+  .left-content {
+    grid-column: span 8;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .right-sidebar {
+    grid-column: span 4;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .welcome-card {
+    background-color: #1e40af;
+    border-radius: 0.5rem;
+    padding: 1rem;
+  }
+  
+  .welcome-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .welcome-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .welcome-label {
+    font-size: 0.875rem;
+    color: #d1d5db;
+    margin-bottom: 0.25rem;
+  }
+  
+  .phone-number {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+  
+  .info-icon {
+    margin-left: 0.5rem;
+    color: #d1d5db;
+  }
+  
+  .connected-badge {
+    margin-top: 0.5rem;
+    display: inline-block;
+    background-color: #22c55e;
+    color: black;
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .status-dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: white;
+    border-radius: 9999px;
+    margin-left: 0.25rem;
+  }
+  
+  /* ...and so on for the rest of the elements... */
+  
+  /* You would need to add many more styles to replicate the entire UI */
+  /* This is just a starting point to show the approach */
