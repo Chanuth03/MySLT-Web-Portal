@@ -1,34 +1,48 @@
-// import React from "react";
-// import homebackgroundImage from "../../src/assets/bg-dashboard.png";
+import logoImg from "../assets/logo.png";
 import AccountBalance from "../components/AccountBalance";
+import AccountSelector from "../components/AccountSelector";
 import Banner from "../components/Banner";
 import ContentSection from "../components/ContentSection";
-import AccountSelector from "../components/AccountSelector";
 import CustomNavBar from "../components/CustomNavBar";
+import MobitelBanner from "../components/MobitelComponents/Banner";
+import Mobile from "../components/MobitelComponents/MobitelInterface";
+import MobitelQuickAccessMenu from "../components/MobitelComponents/QuickAccessMenu";
 import QuickAccessMenu from "../components/QuickAccessMenu";
-// import ValueAddedServicesMenu from "../components/ValueAddedServicesMenu";
 import useStore from "../services/useAppStore";
-import Mobile from "../components/Mobile/Mobile";
-import "./Home.css"; // Import the CSS file
+import "./Home.css";
 
 const Home = () => {
-  const { selectedNavbarItem } = useStore();
+  const { selectedNavbarItem, selectedTelephone } = useStore();
+
+  const isMobitel = selectedTelephone === "0714329988";
 
   return (
     <div className="home-container">
-      {/* Left Sticky Navigation Bar */}
-      <div className="nav-sidebar">
+      <div className="nav-sidebar desktop-only">
         <CustomNavBar />
       </div>
 
-      {/* Main Content */}
       <div className="main-content-dashboard">
-        {/* Value Added Services and Account Balance in Right Middle */}
-        <div className="top-section">
-          <AccountBalance />
+        <div className="mobile-main-box">
+          <div className="account-selector-mobile">
+            <img src={logoImg} alt="Logo" className="mobile-logo" />
+            <AccountSelector />
+          </div>
+          <div className="quick-access-mobile">
+            {isMobitel ? <MobitelQuickAccessMenu /> : <QuickAccessMenu />}
+            {isMobitel ? <MobitelBanner /> : <Banner />}
+          </div>
         </div>
 
-        {/* Dynamic Content */}
+        <div className="mobile-account-balance-box">
+          <AccountBalance />
+        </div>
+        <div className="mobile-custom-navbar">
+          <CustomNavBar />
+        </div>
+
+        <div className="top-section">{isMobitel ? "" : <AccountBalance />}</div>
+
         <div className="dynamic-content">
           {selectedNavbarItem === "" && <ContentSection />}
           {selectedNavbarItem === "Broadband" && <ContentSection />}
@@ -38,11 +52,12 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Right Sticky Quick Access Menu & Banner */}
       <div className="right-sidebar">
-        <AccountSelector />
-        <QuickAccessMenu />
-        <Banner />
+        <div className="account-selector-desktop">
+          <AccountSelector />
+        </div>
+        {isMobitel ? <MobitelQuickAccessMenu /> : <QuickAccessMenu />}
+        {isMobitel ? <MobitelBanner /> : <Banner />}
       </div>
     </div>
   );
